@@ -1,0 +1,66 @@
+@import "scss/_bootstrap";
+@import "scss/_fluidbox";
+
+.nebula-bg {
+   background: #202080;
+   background-image: url(<%= @items["/imgs/nebula-tile.png"].path %>);
+   background-repeat: repeat-x;
+}
+
+div#naev-header {
+   padding: 0;
+   margin: 0;
+   height: 5rem;
+
+   img {
+      height: 5rem;
+   }
+}
+
+.navbar-brand {
+   img#logo {
+      height: 2rem;
+      filter: contrast(0%) brightness(200%);
+   }
+}
+
+.navbar {
+   margin-bottom: 1rem;
+}
+
+main {
+   text-align: justify;
+   text-justify: inter-word;
+
+   div#download-list {
+      width: 200px;
+   }
+
+   div.blog-post {
+      margin-bottom: 3rem;
+   }
+
+   .foto-gallery {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      a {
+         padding: 1px;
+         @include media-breakpoint-only(xs) { width: calc(100% /1); }
+         @include media-breakpoint-only(sm) { width: calc(100% /2); }
+         @include media-breakpoint-only(md) { width: calc(100% /3); }
+         @include media-breakpoint-only(lg) { width: calc(100% /4); }
+         @include media-breakpoint-only(xl) { width: calc(100% /5); }
+
+         > img {
+            max-width: 500px;
+         }
+      }
+   }
+}
+
+footer {
+   height: 5rem;
+   padding-top: 2rem
+}
