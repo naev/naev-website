@@ -41,14 +41,15 @@
       <%
         def nav( txt, target )
            active = (@item==target) ? ' active' : ''
-           "<li class='nav-item'><a class='nav-link#{active}' href='#{target.path}'>#{txt}</a></li>"
+           "<li class='nav-item'><a class='nav-link#{active}' href='#{target}'>#{txt}</a></li>"
         end
       %>
       <ul class="navbar-nav">
-       <%= nav( 'Blarg',     @items['/index.md'] ) %>
-       <%= nav( 'About',     @items['/about.md'] ) %>
-       <%= nav( 'Media',     @items['/media.md'] ) %>
-       <%= nav( 'Downloads', @items['/downloads.md'] ) %>
+       <%= nav( 'Blarg',     @items['/index.md'].path ) %>
+       <%= nav( 'About',     @items['/about.md'].path ) %>
+       <%= nav( 'Media',     @items['/media.md'].path ) %>
+       <%= nav( 'Downloads', @items['/downloads.md'].path ) %>
+       <%= nav( 'Lua API',   "http://api.naev.org" ) %>
       </ul>
      </div>
     </div>
