@@ -31,7 +31,7 @@
 
    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
-     <a class="p-0 navbar-brand d-sm-none d-md-block" href="#">
+     <a class="p-0 navbar-brand" href="#">
       <img id="logo" class="img-fluid" src="<%= @items['/favicon.png'].path %>" alt="Naev" />
      </a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,11 +44,13 @@
            "<li class='nav-item'><a class='nav-link#{active}' href='#{target}'>#{txt}</a></li>"
         end
       %>
-      <ul class="navbar-nav">
+      <ul class="navbar-nav align-items-end">
        <%= nav( 'Blarg',     @items['/index.md'].path ) %>
        <%= nav( 'About',     @items['/about.md'].path ) %>
        <%= nav( 'Media',     @items['/media.md'].path ) %>
        <%= nav( 'Downloads', @items['/downloads.md'].path ) %>
+       <%= nav( 'Github',       "https://github.com/naev/naev" ) %>
+       <%= nav( 'Wiki',      "https://github.com/naev/naev/wiki" ) %>
        <%= nav( 'Lua API',   "http://api.naev.org" ) %>
       </ul>
      </div>
