@@ -13,7 +13,7 @@ A list of all downloads can be found at [SourceForge](https://sourceforge.net/pr
  <a class='list-group-item list-group-item-action' href='https://sourceforge.net/projects/naev/files/naev-0.7.0/naev-0.7.0-linux-x86-32/download'>Linux 32-bit</a>
  <a class='list-group-item list-group-item-action' href='https://sourceforge.net/projects/naev/files/naev-0.7.0/naev-0.7.0-linux-x86-64/download'>Linux 64-bit</a>
  <a class='list-group-item list-group-item-action' href='https://sourceforge.net/projects/naev/files/naev-0.7.0/naev-0.7.0.tar.bz2/download'>Source Code</a>
- <a class='list-group-item list-group-item-action' href='https://sourceforge.net/projects/naev/files/naev-0.7.0/ndata-0.7.0.zip/download'>ndata</a>
+ <a class='list-group-item list-group-item-action' href='https://sourceforge.net/projects/naev/files/naev-0.7.0/naev-0.7.0-ndata.zip/download'>ndata</a>
 </div>
 
 <div class="my-4 card">
