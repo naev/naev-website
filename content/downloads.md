@@ -43,7 +43,8 @@ Download the universal binary and the ndata. Once you have downloaded the ndata,
 You can open up naev.app as a folder by right clicking and selecting “Show Package Contents”.
    </div>
    <div class="tab-pane fade" id="linux-desc" role="tabpanel" aria-labelledby="linux-tab" markdown=1>
-Generic 32-bit and 64-bit binaries are available above. The ndata is architecture-independent. Ubuntu users can install Naev through the [Playdeb package](http://www.playdeb.net/software/NAEV). If you’re unfamiliar, instructions can be found [here](http://www.playdeb.net/updates/Ubuntu/#how_to_install).
+Generic 32-bit and 64-bit binaries are available above. The ndata is architecture-independent.
+<!--Ubuntu users can install Naev through the [Playdeb package](http://www.playdeb.net/software/NAEV). If you’re unfamiliar, instructions can be found [here](http://www.playdeb.net/updates/Ubuntu/#how_to_install).-->
 
 We have been packaged by Gentoo, Arch Linux, openSUSE and Fedora as naev.
 
