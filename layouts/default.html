@@ -44,7 +44,7 @@
            "<li class='nav-item'><a class='nav-link#{active}' href='#{target}'>#{txt}</a></li>"
         end
       %>
-      <ul class="navbar-nav align-items-end">
+      <ul class="navbar-nav">
        <%= nav( 'Blarg',     @items['/index.md'].path ) %>
        <%= nav( 'About',     @items['/about.md'].path ) %>
        <%= nav( 'Media',     @items['/media.md'].path ) %>
@@ -67,9 +67,9 @@
 
    <div class='container-fluid nebula-bg mt-5'>
    <div class='container'>
-   <footer class='m-0 text-muted'>
-    <p class='float-left'>&copy; 2019 Naev Development Blarg</p>
-    <p class='float-right'>Original content licensed under CC-By-SA 4.0</p>
+   <footer class='row text-muted'>
+    <p class='col-xs-12 col-sm-6 text-left'>&copy; 2019 Naev Development Blarg</p>
+    <p class='col-xs-12 col-sm-6 text-right'>Original content licensed under CC-By-SA 4.0</p>
    </footer>
    </div>
    </div>

@@ -64,3 +64,49 @@ footer {
    height: 5rem;
    padding-top: 2rem
 }
+
+// Only apply to the smallest breakpoint (xs)
+@media (max-width:576px) {
+   // Don't justify in small mobile, since it causes weird word spacing.
+   main {
+      text-align:left;
+   }
+
+   // Decrease the bullet indentation, so we have less whitespace on nested lists.
+   ol, ul {
+      padding-left: 1.5rem;
+   }
+
+   // Add margin to the top and bottom of the navbar menu, and add a line at the top separating
+   // the toolbar and menu.
+   .navbar-nav {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      padding-top: 0.5em;
+      border-top: 1px solid #888;
+
+      // Transition makes sure that when expanding or collapsing, the margins smoothly transition.
+      transition: margin 0.3s ease-out, padding 0.3s ease-out, border-top 0.3s ease-out;
+      
+      // Add margin to nav links so they aren't on the very edge of screen.
+      .nav-link {
+         margin-left:1rem;
+      }
+   }
+  
+   // When the navbar is collapsed, don't add margin or the horizontal line.
+   .navbar-collapse.collapse:not(.show) > .navbar-nav {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      border-top: 0;
+   }
+
+   // Fix for mobile footer, so text doesn't end below the nebula image.
+   footer {
+      padding-top:1em;
+      > p {
+         margin-bottom:0;
+      }
+   }
+}
