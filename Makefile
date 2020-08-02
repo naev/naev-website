@@ -8,7 +8,9 @@ view:
 	bundle exec nanoc view
 
 install: all
-	 rsync -r --progress output/. some_server:some_path
+	test -d naev.github.io || git clone git@github.com:naev/naev.github.io.git
+	rsync -avzh output/ naev.github.io
+	(cd naev.github.io && git commit -m "updates" && git push)
 
 check:
 	bundle exec nanoc check --all
