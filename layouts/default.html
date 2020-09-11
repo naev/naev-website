@@ -23,7 +23,7 @@
     <title>Naev - <%= @item[:title] %></title>
 
     <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="Naev Blarg RSS Feed" href="<%= @items['/feed.rb'].path %>" />
+    <link rel="alternate" type="application/rss+xml" title="Naev Blarg RSS Feed" href="<%= @config[:base_url]+@items['/feed.rb'].path %>" />
   </head>
   <body class="bg-light">
    <div id="naev-header" class="container-fluid nebula-bg">
