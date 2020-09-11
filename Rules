@@ -39,7 +39,7 @@ compile '/robots.txt' do
 end
 compile '/feed.rb' do
    filter :erb
-   write '/feed.xml'
+   write '/feed/index.xml'
 end
 
 # favoicon
