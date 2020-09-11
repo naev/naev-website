@@ -37,6 +37,10 @@ compile '/robots.txt' do
    filter :erb
    write '/robots.txt'
 end
+compile '/feed.rb' do
+   filter :erb
+   write '/feed.xml'
+end
 
 # favoicon
 [16, 32, 64, 128, 180, 196].each do |s|

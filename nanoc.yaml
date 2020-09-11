@@ -6,6 +6,11 @@ text_extensions: [ 'adoc', 'asciidoc', 'atom', 'coffee', 'css', 'erb', 'haml', '
 # Global
 base_url: "https://naev.org"
 
+# Stuff for RSS Feed
+title: "Naev Blarg"
+author_name: "Naev DevTeam"
+author_uri: "httts://naev.org"
+
 prune:
   auto_prune: true
 
