@@ -9,7 +9,7 @@ base_url: "https://naev.org"
 # Stuff for RSS Feed
 title: "Naev Blarg"
 author_name: "Naev DevTeam"
-author_uri: "httts://naev.org"
+author_uri: "https://naev.org"
 
 prune:
   auto_prune: true
