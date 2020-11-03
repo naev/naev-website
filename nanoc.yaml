@@ -8,6 +8,7 @@ base_url: "https://naev.org"
 
 prune:
   auto_prune: true
+  exclude: [ '.git' ]
 
 data_sources:
   - type: filesystem
