@@ -13,7 +13,7 @@ install: all
 	(cd naev.github.io && git commit -m "updates" && git push)
 
 check:
-	bundle exec nanoc check --all
+	bundle exec nanoc check
 
 
 
