@@ -30,6 +30,10 @@ jobs:
       run: |
         make
 
+    - name: Check Website
+      run: |
+        make check
+
     - name: Upload Website Artifacts
       uses: actions/upload-artifact@v2
       with:
