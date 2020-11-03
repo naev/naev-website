@@ -12,3 +12,11 @@ prune:
 data_sources:
   - type: filesystem
     encoding: utf-8
+
+checking:
+  enabled_checks:
+    - ilinks
+    - elinks
+    - stale
+    - html
+    - mixed_content
