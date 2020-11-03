@@ -47,7 +47,7 @@ jobs:
     steps:
       - name: Trigger Publish
         run: |
-          curl -X POST https://api.github.com/repos/naev/naev.github.io/dispatches \
+          curl -X POST https://api.github.com/repos/projectsynchro/naev.github.io/dispatches \
           -H 'Accept: application/vnd.github.everest-preview+json' \
           -u ${{ secrets.WEBSITE_ACCESS_TOKEN }} \
           --data '{"event_type": "publish", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
