@@ -26,10 +26,6 @@ jobs:
       run: |
         bundle install
 
-    - name: Check Website
-      run: |
-        make check
-
     - name: Compile Website
       run: |
         make
