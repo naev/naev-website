@@ -1,4 +1,4 @@
-on: push
+on: [push, pull_request]
 
 name: Website Automation
 
@@ -44,6 +44,8 @@ jobs:
   "Publish_Website":
     needs: "Check_Website"
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' }}
+    
     steps:
       - name: Trigger Publish
         run: |
