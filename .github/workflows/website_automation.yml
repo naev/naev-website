@@ -24,7 +24,7 @@ jobs:
 
     - name: Install Required Ruby Gems
       run: |
-        bundle install
+        bundle install -j$(nproc)
 
     - name: Compile Website
       run: |
