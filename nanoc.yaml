@@ -13,7 +13,16 @@ author_uri: "https://naev.org"
 
 prune:
   auto_prune: true
+  exclude: [ '.git' ]
 
 data_sources:
   - type: filesystem
     encoding: utf-8
+
+checking:
+  enabled_checks:
+    - ilinks
+    - elinks
+    - stale
+    - html
+    - mixed_content

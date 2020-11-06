@@ -23,13 +23,13 @@ A list of all downloads can be found at [SourceForge](https://sourceforge.net/pr
  <div class="card-body">
   <ul class="nav nav-tabs" role="tablist">
    <li class="nav-item">
-    <a class="nav-link active" id="windows-tab" data-toggle="tab" href="#windows-desc" role="tab" aria-controls="home" aria-selected="true">Windows</a>
+    <a class="nav-link active" id="windows-tab" data-toggle="tab" href="#windows-desc" role="tab" aria-selected="true">Windows</a>
    </li>
    <li class="nav-item">
-    <a class="nav-link" id="macosx-tab" data-toggle="tab" href="#macosx-desc" role="tab" aria-controls="profile" aria-selected="false">Mac OS X</a>
+    <a class="nav-link" id="macosx-tab" data-toggle="tab" href="#macosx-desc" role="tab" aria-selected="false">Mac OS X</a>
    </li>
    <li class="nav-item">
-    <a class="nav-link" id="linux-tab" data-toggle="tab" href="#linux-desc" role="tab" aria-controls="contact" aria-selected="false">Linux</a>
+    <a class="nav-link" id="linux-tab" data-toggle="tab" href="#linux-desc" role="tab" aria-selected="false">Linux</a>
    </li>
   </ul>
   <div class="m-2 tab-content">

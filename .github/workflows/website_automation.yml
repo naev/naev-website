@@ -1,0 +1,55 @@
+on: [push, pull_request]
+
+name: Website Automation
+
+jobs:
+  "Check_Website":
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Naev Website Repository
+      uses: actions/checkout@v2
+
+    - name: Update APT Cache
+      run: |
+        sudo apt-get update
+
+    - name: Install Required APT Packages
+      run: |
+        sudo apt-get install \
+          bundler \
+          make \
+          ruby-dev \
+          tidy
+
+    - name: Install Required Ruby Gems
+      run: |
+        bundle install -j$(nproc)
+
+    - name: Compile Website
+      run: |
+        make
+
+    - name: Check Website
+      run: |
+        make check
+
+    - name: Upload Website Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: naev-website-${{ github.sha }}
+        path: ${{ github.workspace }}/output/*
+        if-no-files-found: error
+
+  "Publish_Website":
+    needs: "Check_Website"
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'push' && github.repository == 'naev/naev' }}
+    
+    steps:
+      - name: Trigger Publish
+        run: |
+          curl -X POST https://api.github.com/repos/naev/naev.github.io/dispatches \
+          -H 'Accept: application/vnd.github.everest-preview+json' \
+          -u ${{ secrets.WEBSITE_ACCESS_TOKEN }} \
+          --data '{"event_type": "website", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
