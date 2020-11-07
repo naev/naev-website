@@ -44,7 +44,7 @@ jobs:
   "Publish_Website":
     needs: "Check_Website"
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'push' && github.repository == 'naev/naev' }}
+    if: ${{ github.event_name == 'push' && github.repository == 'naev/naev-website' }}
     
     steps:
       - name: Trigger Publish
