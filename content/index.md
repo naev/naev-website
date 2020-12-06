@@ -3,7 +3,7 @@ title: Blarg
 ---
 
 <hr/>
-<% @items.find_all('/blarg/*').sort_by do |a| a.identifier end.reverse().each do |b| %>
+<% @items.find_all('/blarg/*.md').select{|b| b[:hidden].nil?}.sort_by do |a| a.identifier end.reverse().each do |b| %>
  <div class="blog-post">
   <h4><a href='<%= b.path %>'>
    <%= b[:title] %>

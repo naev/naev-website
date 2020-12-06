@@ -13,20 +13,18 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+# ignore everything starting with underscore
+ignore '/**/_*'
+
 # preprocess blarg entries
 preprocess do
-   @items.find_all('/blarg/*.md').select{
-      |b| b[:hidden].nil?
-   }.each do |b|
+   @items.find_all('/blarg/*.md').each do |b|
       created_at = Time.parse(File.basename(b.identifier.without_ext).split('_')[0])
       b[:created_at] = created_at
       b[:created_at_s] = created_at.strftime("#{created_at.day.ordinalize} of %m, %y")
       b[:kind] = 'article'
    end
 end
-
-# ignore everything starting with underscore
-ignore '/**/_*'
 
 # some special files
 compile '/sitemap.xml' do
@@ -55,19 +53,21 @@ compile '/favicon.png', rep: :ico do
 end
 
 compile '/**/*.md' do
-   filter :erb
+  if item['hidden'].nil? 
+    filter :erb
 
-   # Markdown
-   filter :kramdown
+    # Markdown
+    filter :kramdown
 
-   # Standard procesing 
-   layout '/default.html'
-   filter :relativize_paths, :type => :css
-   filter :relativize_paths, :type => :html
-   filter :tidy
+    # Standard procesing 
+    layout '/default.html'
+    filter :relativize_paths, :type => :css
+    filter :relativize_paths, :type => :html
+    filter :tidy
 
-   basename = (item.identifier=='/index.md') ? '' : item.identifier.without_ext
-   write basename+'/index.html'
+    basename = (item.identifier=='/index.md') ? '' : item.identifier.without_ext
+    write basename+'/index.html'
+  end
 end
 
 # Javascript and friends
