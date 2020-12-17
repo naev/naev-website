@@ -2,6 +2,13 @@
 title: Downloads
 ---
 
+Naev can be acquired from the following sources:
+
+* [Naev on github](https://github.com/naev/naev/releases/)
+* [Naev on steam](https://store.steampowered.com/app/598530/Naev/)
+* [Naev on itch.io](https://naev.itch.io/naev)
+* Most linux package managers
+
 A list of all downloads can be found at [Github](https://github.com/naev/naev/releases). See bottom for platform-specific instructions.
 
 <div class="my-4 list-group" id="download-list">
