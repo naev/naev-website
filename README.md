@@ -46,7 +46,7 @@ author: Name (Your name here)
 ---
 ```
 
-The writing is down using [markdown](https://daringfireball.net/projects/markdown/) and is fairly straight forward to do.
+Blarg posts are written in [markdown](https://daringfireball.net/projects/markdown/) and is fairly straight forward to do.
 
 ### Using images
 
