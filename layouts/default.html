@@ -64,7 +64,10 @@
    <main role='main' class='container'>
     <h2><%= @item[:title] %></h2>
     <% if not @item[:created_at].nil? %>
-    <p class="text-muted"><%= @item[:created_at].strftime("on %B #{@item[:created_at].day.ordinalize}, %Y").upcase %></p>
+    <p class="text-muted">
+    <%= ("by %s," % @item[:author]).upcase %>
+    <%= @item[:created_at].strftime("on %B #{@item[:created_at].day.ordinalize}, %Y").upcase %>
+    </p>
     <% end %>
     <%= yield %>
    </main>
