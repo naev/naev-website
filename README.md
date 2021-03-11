@@ -37,6 +37,15 @@ This command will launch a web server on `localhost:3000` allowing for quick and
 
 To write a blarg post it is as simple as creating a file in `content/blarg/`. Please note that the filename should be `YYYY-MM-DD_text.md` where `YYYY` is the year of the post, `MM` is the month of the post, and `DD` is the day of the post.
 
+When writing a blarg post, make sure you include the following at the start of your markdown file.
+
+```
+---
+title: Title (This can be whatever you want)
+author: Name (Your name here)
+---
+```
+
 The writing is down using [markdown](https://daringfireball.net/projects/markdown/) and is fairly straight forward to do.
 
 ### Using images
