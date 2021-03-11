@@ -8,7 +8,10 @@ title: Blarg
   <h4><a href='<%= b.path %>'>
    <%= b[:title] %>
   </a></h4>
-  <p class="text-muted"><%= b[:created_at].strftime("on %B #{b[:created_at].day.ordinalize}, %Y").upcase %></p>
+  <p class="text-muted">
+  <%= ("by %s," % b[:author]).upcase %>
+  <%= b[:created_at].strftime("on %B #{b[:created_at].day.ordinalize}, %Y").upcase %>
+  </p>
   <%= b.compiled_content %>
  </div>
 <hr/>
