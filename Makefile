@@ -4,7 +4,7 @@
 all:
 	bundle exec nanoc
 
-view:
+view: all
 	bundle exec nanoc view
 
 install: all
