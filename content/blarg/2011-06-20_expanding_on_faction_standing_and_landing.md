@@ -11,7 +11,7 @@ Important military outposts and such will now be restricted to factional allies,
  <div class="embed-responsive figure-img">
     <img class='img-fluid' alt='Screenshot' src="<%= @items['/imgs/blarg/2011/06/noland-300x225.png'].path %>" />
  </div>
- <figcaption class="figure-caption">Screenshot of Naev 0.5.0.</figcaption>
+ <figcaption class="figure-caption">They don't take kindly to outsiders at Dvaered High Command.</figcaption>
 </figure>
 
 #### Landing
