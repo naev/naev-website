@@ -1,5 +1,5 @@
 ---
-title: Blarg
+title: Naev Development Blarg
 ---
 
 <hr/>
