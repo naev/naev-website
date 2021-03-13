@@ -39,7 +39,7 @@ class Integer
   end
 end
 
-def video( item, caption, aspectratio='16by9', class_code='' )
+def video( item, caption, class_code='', aspectratio='16by9' )
   return <<-EOS
 <figure class="figure embed-responsive #{class_code}">
  <div class="embed-responsive embed-responsive-#{aspectratio} figure-img">
