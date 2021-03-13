@@ -52,9 +52,9 @@ def video( item, caption, class_code='' )
 EOS
 end
 
-def image( item, caption, class_code='', alignment='center' )
+def image( item, caption, alignment='center' )
   return <<-EOS
-<figure class="figure embed-responsive #{class_code} style="text-align:#{alignment};">
+<figure class="figure embed-responsive style="text-align:#{alignment};">
   <div class="embed-responsive figure-img">
     <img class='img-fluid' alt='Screenshot' src="#{item.path}" />
   </div>
