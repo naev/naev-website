@@ -4,7 +4,7 @@ author: Deiz
 tags: [ 'announcement' ]
 ---
 
-Naev’s Lua API documentation has finally been integrated as a part of [naev.org](https://naev.org), under its very own subdomain: [api.naev.org](https://naev.org/api).
+Naev’s Lua API documentation has finally been integrated as a part of [naev.org](https://naev.org), under its very own subdomain: [api.naev.org](https://naev.org/api/).
 
 Some may note that the documentation has been around for some time, and that’s true. In fact, the effort dates to 2008, and has been kept in sync with the code ever since. It’s historically been hosted on a small VPS by bobbens, with a handful of links to it peppered throughout the [Wiki](https://github.com/naev/naev/wiki), as well as a mention in the [IRC channel’s](https://webchat.freenode.net/?channels=naev) topic (though I suspect 95% of IRC users never read channel topics).
 
