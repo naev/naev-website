@@ -1,6 +1,6 @@
 ---
 title: Expanding on faction standing and landing
-author: deiz
+author: Deiz
 tags: [ 'development' ]
 ---
 

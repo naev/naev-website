@@ -1,6 +1,6 @@
 ---
 title: It’s shiny and new.
-author: deiz
+author: Deiz
 tags: [ 'announcement' ]
 ---
 

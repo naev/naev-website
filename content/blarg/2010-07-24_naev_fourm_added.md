@@ -1,6 +1,6 @@
 ---
 title: NAEV forum added.
-author: deiz
+author: Deiz
 tags: [ 'announcement' ]
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 'Arch Linux: NAEV now included in Community repository.'
-author: deiz
+author: Deiz
 tags: [ 'release' ]
 ---
 

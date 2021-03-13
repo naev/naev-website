@@ -1,6 +1,6 @@
 ---
 title: 'Background effects: Improving screenshots since 2010.'
-author: deiz
+author: Deiz
 tags: [ 'development' ]
 ---
 
