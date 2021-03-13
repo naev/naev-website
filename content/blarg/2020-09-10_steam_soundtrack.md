@@ -1,6 +1,7 @@
 ---
 title: Steam Branches and Soundtrack
 author: bobbens
+tags: [ 'release' ]
 ---
 
 We have added support for the latest beta and nightly automated builds on
