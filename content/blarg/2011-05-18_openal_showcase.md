@@ -18,7 +18,7 @@ For the implementation I’m using the [SW OpenAL implementation by KittyCat](ht
 
 Now without further ado here is the showcase video of the mission:
 
-<%= video( @items['/videos/0.5.0_flfbase.webm'], "FLF Base showcase video", "video720p", "4by3" ) %>
+<%= video( @items['/videos/blarg/2011/05/0.5.0_flfbase.webm'], "FLF Base showcase video", "video720p", "4by3" ) %>
 
 I’m not an OpenAL expert, so if anybody has any advice or recommendations, I’d love to hear them. This isn’t final so it may sound different in the 0.5.0 release. Of course I haven’t touched this part of the sound code in 2 years or so. We’ll see.
 
