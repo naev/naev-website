@@ -1,6 +1,7 @@
 ---
 title: Sporadic NAEV Newsletter Vol. 1
 author: bobbens
+tags: [ 'development' ]
 ---
 
 Hello,

@@ -1,7 +1,7 @@
 ---
 title: Hello World!
 author: bobbens
-tags: [ 'release' ]
+tags: [ 'announcement' ]
 ---
 
 After a longer than expected hiatus, the Naev website is back! It has been completely redone and is also hosted on [github](https://github.com/naev/naev-website).

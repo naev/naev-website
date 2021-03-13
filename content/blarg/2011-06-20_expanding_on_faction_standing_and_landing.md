@@ -1,6 +1,7 @@
 ---
 title: Expanding on faction standing and landing
 author: deiz
+tags: [ 'development' ]
 ---
 
 To provide a brief overview: In 0.5.1, the landing and faction standing mechanics will be changing in a big way. They’re both no longer hard-coded in C, having been moved to flexible Lua scripts that can operate differently for each faction.

@@ -1,6 +1,7 @@
 ---
 title: 'Arch Linux: NAEV now included in Community repository.'
 author: deiz
+tags: [ 'release' ]
 ---
 
 The packages ([naev and naev-data](https://archlinux.org/packages/?q=naev)) are still quite new, so some mirrors may not have synced yet.

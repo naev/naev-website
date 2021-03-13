@@ -1,6 +1,7 @@
 ---
 title: New tutorial
 author: BTAxis
+tags: [ 'development' ]
 ---
 
 You’ve all seen it. The message asking you if you wanted to play a tutorial whenever you created a new pilot. Well, I’m pleased to say that message won’t be bothering you anymore, because the tutorial has a new face.

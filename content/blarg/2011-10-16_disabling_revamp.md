@@ -1,6 +1,7 @@
 ---
 title: Disabling Revamp
 author: bobbens
+tags: [ 'development' ]
 ---
 
 So, this was done a while back; finally getting around to posting about it. Briefly, we’ve changed how disabling works: Instead of auto-disabling when a ship reaches 30% base armour, you can now take disabling damage. As for how this works, weapons can now deal two types of damage: normal and disabling. Disabling damage is only applied when your armour is hit, and this increases your disable damage. If the amount of disabling damage taken exceeds your current armour, your ship is disabled. This applies to all ships and will make it so now you have to outfit to safely disable ships. However, specialized new missiles come to the rescue and provide disabling damage so that you don’t have to sacrifice shield piercing abilities for your cannons/turrets.

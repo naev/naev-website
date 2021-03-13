@@ -1,6 +1,7 @@
 ---
 title: It’s shiny and new.
 author: deiz
+tags: [ 'announcement' ]
 ---
 
 I’ve griped numerous times that between releases, NAEV is a very quiet project.

@@ -1,6 +1,7 @@
 ---
 title: OpenAL showcase
 author: bobbens
+tags: [ 'development' ]
 ---
 
 With 0.5.0-beta2 out the door I decided to work on more videos to show off missions and fancy things we do in Naev. I first decided to record the OpenAL effects (EFX) we do in the nebula. For this I decided to show off the “Destroy the FLF base” mission. If you do not want to be partially spoiled I recommend you do not watch the video. Although it is really cool.

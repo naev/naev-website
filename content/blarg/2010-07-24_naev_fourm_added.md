@@ -1,6 +1,7 @@
 ---
 title: NAEV forum added.
 author: deiz
+tags: [ 'announcement' ]
 ---
 
 To complement this blog, we’ve now added [a forum](https://github.com/naev/naev/discussions) to the site.

@@ -1,6 +1,7 @@
 ---
 title: Big Big Systems
 author: bobbens
+tags: [ 'development' ]
 ---
 
 So what happens when you take big systems and inject them with pure essence of big? You get Big Big Systems. How big are we talking? If an old system maybe had an effective radius of 3.75 kpx or so, now we have radius of 25 kpx. That’s a pretty big increase. How long does it take to fly across it? It’s likely faster than before thanks to dynamic time compression.

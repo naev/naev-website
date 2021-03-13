@@ -1,6 +1,7 @@
 ---
 title: Recent developments
 author: BTAxis
+tags: [ 'announcement' ]
 ---
 
 It has been some time since you’ve heard from us, so I’m taking it upon myself to give you all an idea of what’s going on with Naev.

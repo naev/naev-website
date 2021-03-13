@@ -1,6 +1,7 @@
 ---
 title: Mouse Targeting
 author: bobbens
+tags: [ 'development' ]
 ---
 
 Possibly what could be considered the last of the large planned features has been implemented. This is mouse targeting. Well what  does mouse targeting mean. It has two implications, the first is that in the regular game screen while flying around you can now target ships. However you can also target jump points, planets and ships with the overlay map. This means that you do not necessarily have to go through long boring cycles to try to select a ship to board, or a ship on the map.

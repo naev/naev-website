@@ -1,6 +1,7 @@
 ---
 title: 'Background effects: Improving screenshots since 2010.'
 author: deiz
+tags: [ 'development' ]
 ---
 
 Space is an immense, largely vacuous void. The ratio of nothingness to interesting phenomena is pitifully high. Among even those rare phenomena, the amount perceptible by the human eye pales in comparison to wider-wavelength recording combined with false colours.
