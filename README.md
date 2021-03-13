@@ -50,4 +50,7 @@ Blarg posts are written in [markdown](https://daringfireball.net/projects/markdo
 
 ### Using images
 
-If you wish to use images you have to separately put them in `content/imgs/blarg/` and you can reference them in the post with the inline ruby code `<%= @items['/imgs/blarg/FILENAME'].path %>` where `FILENAME` is replaced by the name of the file. This expression will be converted to the file path when compiling.
+If you wish to use images you have to separately put them in `content/imgs/blarg/`. For the sake of organization, please sort images by YYYY/MM e.g. `content/imgs/blarg/YYYY/MM`.
+You can reference them in the post with the inline ruby code `<%= @items['/imgs/blarg/FILENAME'].path %>` where `FILENAME` is replaced by the name of the file. This expression will be converted to the file path when compiling.
+
+
