@@ -18,15 +18,7 @@ For the implementation I’m using the [SW OpenAL implementation by KittyCat](ht
 
 Now without further ado here is the showcase video of the mission:
 
-<figure class="figure embed-responsive">
- <div class="embed-responsive embed-responsive-4by3 figure-img">
-  <video controls class="embed-responsive-item">
-   <source src="<%= @items['/videos/0.5.0_flfbase.webm'].path %>" type='video/webm;codecs="vp9, opus"'>
-   <source src="<%= @items['/videos/0.5.0_flfbase_vp8.webm'].path %>" type='video/webm;codecs="vp8, vorbis"'>
-  </video>
- </div>
- <figcaption class="figure-caption">Naev 0.5.0 Skirmish</figcaption>
-</figure>
+<%= video( @items['/videos/0.5.0_flfbase.webm'], "Naev 0.5.0 OpenAL Demo", "4by3", "video720p" ) %>
 
 I’m not an OpenAL expert, so if anybody has any advice or recommendations, I’d love to hear them. This isn’t final so it may sound different in the 0.5.0 release. Of course I haven’t touched this part of the sound code in 2 years or so. We’ll see.
 

@@ -22,21 +22,11 @@ Currently there is no ETA for release, but it should be out before the end of th
 
 #### Big Systems
 
-<figure style="text-align:center;">
- <div class="embed-responsive figure-img">
-    <img class='img-fluid' alt='Screenshot' src="<%= @items['/imgs/blarg/2010/07/bigplanet.png'].path %>" />
- </div>
- <figcaption class="figure-caption">Flying over a large planet.</figcaption>
-</figure>
+<%= image( @items['/imgs/blarg/2010/07/bigplanet.png'], "Flying over a large planet.", "center" ) %>
 
 So what are these famous [big systems](https://groups.google.com/d/topic/naev/fLRwFQf8D_g)? Well as the name states, it consists of making the current systems much larger. Not just in terms of system size, either – Planet and station graphics are now much larger, too. To be able to balance the gameplay with larger systems and to add more interesting missions, jump points have been added. You can no longer jump in or out from arbitrary points – Interstellar travel is done through fixed points. This removes the ability to simply outrun your enemies – They’ll sit on the jump point and wait you out. Missions can also make use of this, requiring players to bypass blockades, or set up their own.
 
-<figure style="text-align:center;">
- <div class="embed-responsive figure-img">
-    <img class='img-fluid' alt='Screenshot' src="<%= @items['/imgs/blarg/2010/07/jumppoint.png'].path %>" />
- </div>
- <figcaption class="figure-caption">Getting ready to jump.</figcaption>
-</figure>
+<%= image( @items['/imgs/blarg/2010/07/jumppoint.png'], "Getting ready to jump.", "center" ) %>
 
 Another major feature is that now ships really land. They shrink and then disappear into the planet’s atmosphere (or station landing bay). This means you can no longer gank NPCs while they sit over planets, which adds more realism. Needless to say, NPC pilots are also able to take off from planets.
 
@@ -50,12 +40,7 @@ Lastly, the entire tech system has been overhauled using labels and groups inste
 
 One of the newest features (recently merged into the electronic warfare branch) is the concept of [slot sizes](https://groups.google.com/d/topic/naev/LGrumu1RvvY). All low, medium and high slots now have a secondary attribute, size. Sizes can be light, standard or heavy and indicates how large of an outfit you can mount in a slot. This is added as a hard limit because with CPU power being the only true limiter, it was quite easy to put fighter bays and huge batteries on small ships, making them nearly impossible to fly.
 
-<figure style="text-align:center;">
- <div class="embed-responsive figure-img">
-    <img class='img-fluid' alt='Screenshot' src="<%= @items['/imgs/blarg/2010/07/slotsizes.png'].path %>" />
- </div>
- <figcaption class="figure-caption">A Pacifier with a mixture of heavy and standard slots.</figcaption>
-</figure>
+<%= image( @items['/imgs/blarg/2010/07/slotsizes.png'], "A Pacifier with a mixture of heavy and standard slots.", "center" ) %>
 
 The slot sizes also allow better differentiation among ships. Which is to say, a fighter with six light high slots can’t come close to matching the firepower of a cruiser with six heavy high slots.
 

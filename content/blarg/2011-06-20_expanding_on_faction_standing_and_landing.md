@@ -8,12 +8,7 @@ To provide a brief overview: In 0.5.1, the landing and faction standing mechanic
 
 Important military outposts and such will now be restricted to factional allies, seldom (if ever) accepting bribes, and attaining standing with a faction will require campaign missions rather than just killing the faction’s enemies.
 
-<figure style="text-align:center;">
- <div class="embed-responsive figure-img">
-    <img class='img-fluid' alt='Screenshot' src="<%= @items['/imgs/blarg/2011/06/noland-300x225.png'].path %>" />
- </div>
- <figcaption class="figure-caption">They don't take kindly to outsiders at Dvaered High Command.</figcaption>
-</figure>
+<%= image( @items['/imgs/blarg/2011/06/noland-300x225.png'], "They don't take kindly to outsiders at Dvaered High Command.", "center" ) %>
 
 #### Landing
 
