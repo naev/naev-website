@@ -38,3 +38,16 @@ class Integer
     end
   end
 end
+
+def video( item, caption, class_code='' )
+  return <<-EOS
+<figure class="figure embed-responsive #{class_code}">
+ <div class="embed-responsive embed-responsive-16by9 figure-img">
+  <video controls class="embed-responsive-item">
+   <source src="#{item.path}" type='video/webm;codecs="vp9, opus"'>
+  </video>
+ </div>
+ <figcaption class="figure-caption">#{caption}</figcaption>
+</figure>
+EOS
+end
