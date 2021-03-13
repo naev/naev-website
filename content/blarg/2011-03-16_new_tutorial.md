@@ -1,16 +1,12 @@
 ---
 title: New tutorial
 author: BTAxis
+tags: [ 'development' ]
 ---
 
 You’ve all seen it. The message asking you if you wanted to play a tutorial whenever you created a new pilot. Well, I’m pleased to say that message won’t be bothering you anymore, because the tutorial has a new face.
 
-<figure style="text-align:center;">
- <div class="embed-responsive figure-img">
-    <img class='img-fluid' alt='Screenshot' src="<%= @items['/imgs/blarg/2011/03/mainmenudunndunndunn-300x170.png'].path %>" />
- </div>
- <figcaption class="figure-caption">Main menu with tutorial button</figcaption>
-</figure>
+<%= image( @items['/imgs/blarg/2011/03/mainmenudunndunndunn-300x170.png'], "Main menu with tutorial button", "center" ) %>
 
 So, a new tutorial. What is different? Well, first of all the tutorial isn’t based in the regular game anymore. Where the old tutorial desperately tried to give you a quick crash course on how to play right at the start of the game, this tutorial is accessed right from the main menu, taking its time in a special training environment, teaching the basic concepts without worrying about the player flying off somewhere because, well, he can’t. So, hopefully, the new tutorial will make the learning process smoother for new players.
 

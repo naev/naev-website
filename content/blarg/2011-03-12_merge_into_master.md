@@ -1,6 +1,7 @@
 ---
 title: Merge into Master
 author: bobbens
+tags: [ 'development' ]
 ---
 
 As a good sign of what’s going on, all changes have been merged into master and development is now going to be done there. Some stats on the change:

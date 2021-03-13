@@ -1,6 +1,7 @@
 ---
 title: What if Naev had cheat codes?
 author: BTAxis
+tags: [ 'development' ]
 ---
 
 Many of you will have used the in-game Lua console to cheat, or at least know how to. But I was thinking, what if cheating was a feature? So I came up with this for the on-start event:

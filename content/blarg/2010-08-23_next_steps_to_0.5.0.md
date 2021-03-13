@@ -1,6 +1,7 @@
 ---
 title: Next steps to 0.5.0
 author: bobbens
+tags: [ 'development' ]
 ---
 
 I’ve been asked multiple times what the ETA for 0.5.0 is. For now, the answer is “when it’s done”, but going over the TODO, it seems like it’ll be around New Years. Many of our original goals are done, but the list seems to grow faster than features are finished; here’s what’s left:
