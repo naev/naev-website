@@ -54,7 +54,7 @@ end
 
 def image( item, caption, alignment='center' )
   return <<-EOS
-<figure class="figure embed-responsive style="text-align:#{alignment};">
+<figure class="figure embed-responsive" style="text-align:#{alignment};">
   <div class="embed-responsive figure-img">
     <img class='img-fluid' alt='Screenshot' src="#{item.path}" />
   </div>
