@@ -7,7 +7,6 @@ name: Website Publish
 
 jobs:
   "Publish_Website":
-    needs: "Check_Website"
     runs-on: ubuntu-latest
     if: ${{ github.repository == 'naev/naev-website' }}
     
