@@ -1,6 +1,6 @@
 on: [push, pull_request]
 
-name: Website Automation
+name: Website Check
 
 jobs:
   "Check_Website":
@@ -40,16 +40,3 @@ jobs:
         name: naev-website-${{ github.sha }}
         path: ${{ github.workspace }}/output/*
         if-no-files-found: error
-
-  "Publish_Website":
-    needs: "Check_Website"
-    runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'push' && github.repository == 'naev/naev-website' }}
-    
-    steps:
-      - name: Trigger Publish
-        run: |
-          curl -X POST https://api.github.com/repos/naev/naev.github.io/dispatches \
-          -H 'Accept: application/vnd.github.everest-preview+json' \
-          -u ${{ secrets.WEBSITE_ACCESS_TOKEN }} \
-          --data '{"event_type": "website", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
