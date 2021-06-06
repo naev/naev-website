@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'nanoc', '~> 4.0'
+gem 'webrick'
 gem 'packr'
 gem 'kramdown'
 gem 'nokogiri'
