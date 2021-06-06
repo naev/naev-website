@@ -17,7 +17,12 @@ prune:
 
 data_sources:
   - type: filesystem
+    content_dir: content
+    layouts_dir: layouts
     encoding: utf-8
+    
+# posts per page
+pagination: 2
 
 checking:
   enabled_checks:

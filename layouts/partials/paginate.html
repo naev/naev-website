@@ -1,0 +1,35 @@
+<!-- the @page_id variable is indexed from 1, ie 1 is the newest page (but never
+  generated because it's the home page), 2 is the next newest, etc -->
+  <div class="posts">
+    <% sorted_articles.slice((@page_id - 1) * @config[:pagination], @config[:pagination]).each do |item| %>
+      <div class="post">
+        <h1 class="post-title"><a href="<%= item.path %>"><%=h item[:title] %></a></h1>
+        <span class="post-date"><%=h attribute_to_time(item[:created_at]).strftime(@config[:date]) %></span>
+  
+        <%= summary(item.compiled_content(:snapshot => :render_md)) %>
+  
+        <% if has_summary?(item.compiled_content(:snapshot => :render_md)) %>
+          <p><a href="<%= item.path %>">Read the rest...</a></p>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  
+  <div class="pagination">
+    <% if @page_id < (articles.length - 1) / @config[:pagination] + 1 %>
+      <a class="pagination-item older" href="/page/<%= @page_id + 1 %>/">Older</a>
+    <% else %>
+      <span class="pagination-item older">Older</span>
+    <% end %>
+  
+    <a class="pagination-item" href="/post/">All Posts</a>
+  
+    <% if @page_id == 2 %>
+      <a class="pagination-item newer" href="/">Newer</a>
+    <% elsif @page_id != 1 %>
+      <a class="pagination-item newer" href="/page/<%= @page_id - 1 %>/">Newer</a>
+    <% else %>
+      <span class="pagination-item newer">Newer</span>
+    <% end %>
+  </div>
+  

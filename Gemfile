@@ -19,3 +19,5 @@ gem 'typogruby'
 gem 'adsf'
 
 gem 'w3c_validators'
+
+gem 'webrick'

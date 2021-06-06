@@ -1,0 +1,32 @@
+<div class="post">
+  <h1 class="post-title"><%=h @item[:title] %></h1>
+  <span class="post-date"><%=h attribute_to_time(@item[:created_at]).strftime(@config[:date]) %></span>
+  <%= yield %>
+</div>
+
+<% if @item[:tags] && !@item[:tags].empty? %>
+  <div>
+    <small><a class="undeclink" href="/tag/">Tags: </a>
+    <% @item[:tags].sort.each_with_index do |tag, i| %>
+      <a href="/tag/<%=u tag %>" rel="tag"><%=h tag %></a><% if i < @item[:tags].length - 1 %>,<% end %>
+    <% end %></small>
+  </div>
+<% end %>
+
+<div class="pagination">
+  <% item_index = sorted_articles.index(@item) %>
+
+  <% if item_index != articles.length - 1 %>
+    <a class="pagination-item older" href="<%= sorted_articles[item_index + 1].path %>">Older</a>
+  <% else %>
+    <span class="pagination-item older">Older</span>
+  <% end %>
+
+  <a class="pagination-item" href="/post/">All Posts</a>
+
+  <% if item_index != 0 %>
+    <a class="pagination-item newer" href="<%= sorted_articles[item_index - 1].path %>">Newer</a>
+  <% else %>
+    <span class="pagination-item newer">Newer</span>
+  <% end %>
+</div>

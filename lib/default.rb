@@ -6,6 +6,7 @@ include Nanoc::Helpers::Tagging
 include Nanoc::Helpers::XMLSitemap
 include Nanoc::Helpers::ChildParent
 include Nanoc::Helpers::Blogging
+include Nanoc::Helpers::Rendering
 
 require 'nanoc/filters/javascript_concatenator'
 require 'image_size'

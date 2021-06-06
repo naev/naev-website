@@ -1,0 +1,8 @@
+<!-- @articles is any list of articles (preferably sorted) -->
+<ul>
+  <% @articles.each do |item| %>
+    <li>
+      <%=h attribute_to_time(item[:created_at]).strftime(@config[:date]) %> - <a href="<%= item.path %>"><%=h item[:title] %></a>
+    </li>
+  <% end %>
+</ul>

@@ -16,14 +16,24 @@
 # ignore everything starting with underscore
 ignore '/**/_*'
 
-# preprocess blarg entries
 preprocess do
+   # discard drafts FIRST (since they might affect other generated items)
+    unless @config[:publish_drafts]
+     @items.delete_if { |item| item[:draft] == true || item[:publish] == false }
+   end
+ 
    @items.find_all('/blarg/*.md').each do |b|
       created_at = Time.parse(File.basename(b.identifier.without_ext).split('_')[0])
       b[:created_at] = created_at
       b[:created_at_s] = created_at.strftime("#{created_at.day.ordinalize} of %m, %y")
       b[:kind] = 'article'
    end
+
+   # pagination
+   # http://stackoverflow.com/a/503201/3274401
+   2.upto((articles.length - 1) / @config[:pagination] + 1) do |page_id|
+      @items.create( "<%= render 'partials/paginate', :page_id => #{page_id} %>", {:title => "Page #{page_id}", :extension => 'html'}, "/page/#{page_id}")
+      end
 end
 
 # some special files
@@ -86,6 +96,13 @@ compile '**/*.{css,scss}' do
 end
 
 # Other objects
+
+compile '/page/*' do
+   # Standard procesing 
+   layout '/default.html'
+   write item.identifier + '/index.html'
+end
+
 compile '/**/*' do
    write item.identifier.to_s
 end
