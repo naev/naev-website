@@ -39,15 +39,26 @@ class Integer
   end
 end
 
-def video( item, caption, class_code='' )
+def video( item, caption, class_code='', aspectratio='16by9' )
   return <<-EOS
 <figure class="figure embed-responsive #{class_code}">
- <div class="embed-responsive embed-responsive-16by9 figure-img">
+ <div class="embed-responsive embed-responsive-#{aspectratio} figure-img">
   <video controls class="embed-responsive-item">
    <source src="#{item.path}" type='video/webm;codecs="vp9, opus"'>
   </video>
  </div>
  <figcaption class="figure-caption">#{caption}</figcaption>
+</figure>
+EOS
+end
+
+def image( item, caption, alignment='center' )
+  return <<-EOS
+<figure class="figure embed-responsive" style="text-align:#{alignment};">
+  <div class="embed-responsive figure-img">
+    <img class='img-fluid' alt='Screenshot' src="#{item.path}" />
+  </div>
+  <figcaption class="figure-caption">#{caption}</figcaption>
 </figure>
 EOS
 end
