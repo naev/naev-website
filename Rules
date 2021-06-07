@@ -18,11 +18,97 @@ ignore '/**/_*'
 
 # preprocess blarg entries
 preprocess do
-   @items.find_all('/blarg/*.md').each do |b|
+   @items.find_all('/blarg/*.md').select{
+      |b| b[:hidden].nil?
+   }.each do |b|
       created_at = Time.parse(File.basename(b.identifier.without_ext).split('_')[0])
       b[:created_at] = created_at
-      b[:created_at_s] = created_at.strftime("#{created_at.day.ordinalize} of %m, %y")
+      b[:created_at_s] = created_at.strftime("on %B #{created_at.day.ordinalize}, %Y")
+
       b[:kind] = 'article'
+   end
+
+   articles_to_paginate = sorted_articles
+   article_groups = []
+   until articles_to_paginate.empty?
+      article_groups << articles_to_paginate.slice!(0..@config[:page_size]-1)
+   end
+   article_groups.each_with_index do |subarticles, i|
+      first = i*config[:page_size] + 1
+      last  = (i+1)*config[:page_size]
+
+      content  = <<-EOF
+   <hr>
+   <ul class='list-unstyled'>
+      EOF
+      subarticles.each do |b|
+         content += <<-EOF
+   <li class='mt-3 mb-4'>
+      <div class='blog-post'>
+         <h4><%= link_to('#{b[:title]}', @items['#{b.identifier}'].reps[@rep.name].path ) %></h4>
+         <p class="text-muted"><%= ("by #{b[:author]}, #{b[:created_at_s]}").upcase %></p>
+         <%= @items['#{b.identifier}'].reps[@rep.name].compiled_content %>
+      </div>
+   </li>
+   <hr>
+         EOF
+      end
+      content += "</ul>"
+
+      if article_groups.length > 1
+         content += <<-EOF
+   <nav aria-label="Blarg">
+   <ul class="pagination justify-content-center">
+         EOF
+         if i > 0
+            content += <<-EOF
+      <li class="page-item">
+         <a class="page-link" href="<%= relative_path_to(@items['/page/#{i}.md']) %>" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+         <span class="sr-only">Previous</span>
+         </a>
+      </li>
+            EOF
+         end
+         (0..2).reverse_each do |j|
+            if i > j
+               content += <<-EOF
+         <li class="page-item"><a class="page-link" href="<%= relative_path_to(@items['/page/#{i-j}.md']) %>">#{i-j}</a></li>
+               EOF
+            end
+         end
+         content += <<-EOF
+      <li class="page-item active"><a class="page-link" href="#">#{i+1}</a></li>
+         EOF
+         (0..2).each do |j|
+            if article_groups.length > i+j+1
+               content += <<-EOF
+         <li class="page-item"><a class="page-link" href="<%= relative_path_to(@items['/page/#{i+2+j}.md']) %>">#{i+2+j}</a></li>
+               EOF
+            end
+         end
+         if article_groups.length > i+1
+            content += <<-EOF
+      <li class="page-item">
+         <a class="page-link" href="<%= relative_path_to(@items['/page/#{i+2}.md']) %>" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+         </a>
+      </li>
+            EOF
+         end
+         content += <<-EOF
+   </ul>
+   </nav>
+         EOF
+      end
+      
+      @items.create(
+         content,
+         {  :extension => 'md',
+            :title => "Blarg (Page #{i+1})"},
+         "/page/#{i+1}.md"
+      )
    end
 end
 
@@ -91,4 +177,3 @@ compile '/**/*' do
 end
 
 layout '/**/*', :erb
-
