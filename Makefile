@@ -4,7 +4,7 @@
 all:
 	bundle exec nanoc
 
-view:
+view: all
 	bundle exec nanoc view
 
 install: all
@@ -12,7 +12,7 @@ install: all
 	rsync -avzh --delete --exclude=".*" --exclude="CNAME" output/ naev.github.io
 	(cd naev.github.io && git add . && git commit -a -m "updates" && git push)
 
-check:
+check: all
 	bundle exec nanoc check
 
 
