@@ -57,7 +57,7 @@ preprocess do
 
       if article_groups.length > 1
          content += <<-EOF
-   <nav aria-label="Blarg">
+   <nav aria-label="Naev Development Blarg">
    <ul class="pagination justify-content-center">
          EOF
          if i > 0
@@ -106,7 +106,7 @@ preprocess do
       @items.create(
          content,
          {  :extension => 'md',
-            :title => "Blarg (Page #{i+1})"},
+            :title => "Naev Development Blarg (Page #{i+1})"},
          "/page/#{i+1}.md"
       )
    end
