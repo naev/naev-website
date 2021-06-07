@@ -11,6 +11,9 @@ title: "Naev Blarg"
 author_name: "Naev DevTeam"
 author_uri: "https://naev.org"
 
+# Pagination
+page_size: 5
+
 prune:
   auto_prune: true
   exclude: [ '.git' ]
