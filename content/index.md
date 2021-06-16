@@ -2,6 +2,8 @@
 title: Home
 ---
 
+<%= image( @items['/imgs/naev.png'], "", "center" ) %>
+
 Naev is a game about space exploration, trade and combat. Players travel the galaxy and earn money by trading, fighting and performing missions.
 
 #### Want to keep up with development? 
