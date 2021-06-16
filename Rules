@@ -48,8 +48,8 @@ preprocess do
          <h4><%= link_to('#{b[:title]}', @items['#{b.identifier}'].reps[@rep.name].path ) %></h4>
          <p class="text-muted"><%= ("by #{b[:author]}, #{b[:created_at_s]}").upcase %></p>
          <%= @items['#{b.identifier}'].reps[@rep.name].compiled_content %>
-         <hr>
       </div>
+   <hr>
    </li>
          EOF
       end
