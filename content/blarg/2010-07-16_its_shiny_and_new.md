@@ -6,7 +6,7 @@ tags: [ 'announcement' ]
 
 I’ve griped numerous times that between releases, NAEV is a very quiet project.
 
-The vast majority of our discussions occur on [our IRC channel](https://webchat.freenode.net/?channels=naev), which typically has around 30 users. Each of our releases sees thousands of downloads, yet even the mailing list has less than a hundred subscribers.
+The vast majority of our discussions occur on our IRC channel (Freenode), which typically has around 30 users. Each of our releases sees thousands of downloads, yet even the mailing list has less than a hundred subscribers.
 
 That is to say, our discussions never reach more than 5% of our user base, and that’s being *very* generous.
 
