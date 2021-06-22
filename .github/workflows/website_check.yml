@@ -27,13 +27,12 @@ jobs:
         bundle install -j$(nproc)
 
     - name: Build and Check Website
-      id: check
       run: |
         make check
 
     - name: Upload Crash Log
       uses: actions/upload-artifact@v2
-      if: ${{ steps.check.outcome == 'failure' }}
+      if: failure()
       with:
         name: naev-website-${{ github.sha }}-crashlog
         path: ${{ github.workspace }}/crash.log
