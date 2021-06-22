@@ -1,20 +1,16 @@
 on:  
-  push:
-    branches:
-      - main
   workflow_run:
-    workflows:
-      - "Website Check"
-    types:
+    workflows: ["Website Check"]
+    branches: [main]
+    types: 
       - completed
 
 name: Website Publish
 
 jobs:
-  "Publish_Website":
+  on-success:
     runs-on: ubuntu-latest
-    if: ${{ github.repository == 'naev/naev-website' && github.ref == 'refs/heads/main' }}
-    
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository == 'naev/naev-website' }}
     steps:
       - name: Trigger Publish
         run: |
@@ -22,3 +18,11 @@ jobs:
           -H 'Accept: application/vnd.github.everest-preview+json' \
           -u ${{ secrets.WEBSITE_ACCESS_TOKEN }} \
           --data '{"event_type": "website", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
+          
+  on-failure:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' && github.repository == 'naev/naev-website' }}
+    steps:
+      - name: Trigger Publish
+        run: |
+          echo "Website Check Failed."
