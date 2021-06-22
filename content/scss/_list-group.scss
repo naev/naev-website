@@ -63,7 +63,6 @@
   &.disabled,
   &:disabled {
     color: $list-group-disabled-color;
-    pointer-events: none;
     background-color: $list-group-disabled-bg;
   }
 
