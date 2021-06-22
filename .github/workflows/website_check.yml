@@ -26,11 +26,7 @@ jobs:
       run: |
         bundle install -j$(nproc)
 
-    - name: Compile Website
-      run: |
-        make
-
-    - name: Check Website
+    - name: Build and Check Website
       id: check
       run: |
         make check
