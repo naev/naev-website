@@ -31,12 +31,21 @@ jobs:
         make
 
     - name: Check Website
+      id: check
       run: |
         make check
+
+    - name: Upload Crash Log
+      uses: actions/upload-artifact@v2
+      if: ${{ steps.check.outcome == 'failure' }}
+      with:
+        name: naev-website-${{ github.sha }}-crashlog
+        path: ${{ github.workspace }}/crash.log
+        if-no-files-found: error
 
     - name: Upload Website Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: naev-website-${{ github.sha }}
+        name: naev-website-crashlog-${{ github.sha }}
         path: ${{ github.workspace }}/output/*
         if-no-files-found: error
