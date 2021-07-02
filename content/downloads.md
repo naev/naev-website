@@ -7,7 +7,8 @@ Naev can be acquired from the following sources:
 * [Naev on github](https://github.com/naev/naev/releases/)
 * [Naev on steam](https://store.steampowered.com/app/598530/Naev/)
 * [Naev on itch.io](https://naev.itch.io/naev)
-* Most linux package managers
+* [Naev on flathub](https://flathub.org/apps/details/org.naev.Naev)
+* Most linux package managers [![Packaging status](https://repology.org/badge/tiny-repos/naev.svg)](https://repology.org/project/naev/versions)
 
 A list of all downloads can be found at [Github](https://github.com/naev/naev/releases). See bottom for platform-specific instructions.
 
@@ -50,7 +51,7 @@ If you are running MacOS Catalina or newer you may have to bypass Gatekeeper: Se
 64-bit AppImages are available above, these can be marked as executable and bundle all dependencies and data required to play.
 <!--Ubuntu users can install Naev through the [Playdeb package](http://www.playdeb.net/software/NAEV). If you’re unfamiliar, instructions can be found [here](http://www.playdeb.net/updates/Ubuntu/#how_to_install).-->
 
-We have been packaged by Ubuntu, Gentoo, Arch Linux, openSUSE, and Fedora as naev.
+We have been packaged by Ubuntu, Debian, Gentoo, Arch Linux, openSUSE, Fedora, Manjaro, and OpenBSD as naev.
 
 <!--If you’re using our official binaries, make sure to install the dependencies. -->
    </div>
