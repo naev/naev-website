@@ -24,9 +24,13 @@ data_sources:
 
 checking:
   enabled_checks:
-    - ilinks
-    - elinks
+    - internal_links
+    - external_links
     - stale
     - mixed_content
 #    - html
 #    - css
+
+checks:
+  external_links:
+    exclude_files: ['downloads']
