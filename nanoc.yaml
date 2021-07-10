@@ -28,5 +28,5 @@ checking:
     - elinks
     - stale
     - mixed_content
-    - html
-    - css
+#    - html
+#    - css
