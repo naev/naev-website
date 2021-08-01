@@ -42,7 +42,7 @@ bonuses, will have three separate values: detection, evasion, and stealth, that
 control when the ship is first detected, when the ship details are shown and
 scanning is possible, and finally how well the ship can stealth.
 
-![TEST](<%= @items['/imgs/blarg/2021/SNN2/ewredux.png'].path %>){:width="500px"}
+<%= image( @items['/imgs/blarg/2021/SNN2/ewredux.png'], "Electronic Warfare Redux - this time with understandable values!", 'center', 'width="500px"' ) %>
 
 Hiding is the most important attribute that controls when ships are detected at
 and affects both evasion and stealth. Evasion is usually 75% of detected at
@@ -51,7 +51,7 @@ controls the distance at which a ship is scanned at. Scanning a ship allows you
 to see the details of cargo and outfits. Furthermore, patrol ships will scan
 your ship and make sure you don't have illegal cargo.
 
-![TEST](<%= @items['/imgs/blarg/2021/SNN2/scanning.png'].path %>){:width="720px"}
+<%= image( @items['/imgs/blarg/2021/SNN2/scanning.png'], "Player being scanned by a fleet led by an Empire Admonisher.", 'center', 'width="720px"' ) %>
 
 That leads us to the final mechanic: stealth! Stealth allows ships to become
 completely invisible if no ships are within their stealth distance. When
@@ -60,13 +60,13 @@ turning. However, they cease to appear on all system sensors. This allows ships
 to sneak past systems or ships, opening lots of opportunities for contraband,
 piracy, and survival.
 
-![TEST](<%= @items['/imgs/blarg/2021/SNN2/stealth.png'].path %>){:width="720px"}
+<%= image( @items['/imgs/blarg/2021/SNN2/stealth.png'], "Looking at nearby ships in stealth mode.", 'center', 'width="720px"' ) %>
 
 #### Safe lanes
 
 safe lanes
 
-![TEST](<%= @items['/imgs/blarg/2021/SNN2/safelanes.png'].path %>){:width="720px"}
+<%= image( @items['/imgs/blarg/2021/SNN2/safelanes.png'], "Safe lanes that look like Pacman.", 'center', 'width="720px"' ) %>
 
 #### Rebalance
 
@@ -83,9 +83,9 @@ changes are mainly there for the equipment algorithm and AI to exploit.
 
 #### Visual Novel Framework
 
-![TEST](<%= @items['/imgs/blarg/2021/SNN2/vn1.png'].path %>){:width="720px"}
+<%= image( @items['/imgs/blarg/2021/SNN2/vn1.png'], "A friendly Minerva Station Terminal informing the player about their tokens.", 'center', 'width="720px"' ) %>
 
-![TEST](<%= @items['/imgs/blarg/2021/SNN2/vn2.png'].path %>){:width="720px"}
+<%= image( @items['/imgs/blarg/2021/SNN2/vn2.png'], "The Visual Novel Framework has infinite flexibility.", 'center', 'width="720px"' ) %>
 
 #### Future Steps
 
