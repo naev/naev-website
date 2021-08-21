@@ -133,7 +133,7 @@ artwork](https://github.com/naev/naev/wiki/Needed-Artwork%3A-Characters), [new
 outfit artwork](https://github.com/naev/naev/wiki/Needed-Artwork%3A-Outfits),
 [more missions](https://github.com/naev/naev/wiki/Mission-Scripting), gameplay
 testing, etc.  Tasks to be done can be found on the [issue
-tracke](https://github.com/naev/naev/issues), and discussion can be had on
+tracker](https://github.com/naev/naev/issues), and discussion can be had on
 [Discord](https://discord.com/invite/nd2M5BR).
 
 This concludes the Sporadic Naev Newsletter Vol. 2, and hopefully the next will
