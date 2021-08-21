@@ -13,7 +13,7 @@ of 0.9.0 and new features like stealth and safe lanes.
 
 #### State of 0.9.0
 
-We've passed 4,700 commits from 0.8.2. This is going to be the largest amount of
+We've passed 5,500 commits from 0.8.2. This is going to be the largest amount of
 content and changes from any release ever with tons of graphical improvements,
 new mechanics, and new content added all over. It is already all live in the
 nightly images which are available from both
@@ -64,13 +64,15 @@ piracy, and survival.
 
 #### Safe lanes
 
-safe lanes
+One of the last major gameplay changing features is safe lanes, which have been
+recently incorporated into the main branch. Safe lanes consist of routes in
+space that are more regularly patrolled. Most traders and factional systems
+will use these routes, while areas away from space lanes will naturally lead to
+more pirate activities. Core systems with many planets and stations will
+naturally lead to more safe lanes, while systems far away from core systems
+will end up having sparser lanes, or none at all.
 
 <%= image( @items['/imgs/blarg/2021/SNN2/safelanes.png'], "Safe lanes that look like Pacman.", 'center', 'width="720px"' ) %>
-
-#### Rebalance
-
-Lots of shit
 
 #### Ship Classification Redux
 
@@ -81,9 +83,30 @@ fighters have been split into fighters and interceptors (light fighters), and
 cruisers have been split into cruisers and battleships (heavy cruisers). This
 changes are mainly there for the equipment algorithm and AI to exploit.
 
+#### Rebalance
+
+Nearly all the outfits in the game have been modified or completely revamped.
+Core outfits and weapons have been designed to be based around 6 tiers:
+interceptor, fighter, corvette, destroyer, cruiser, and battleship. Utility
+outfits have been made to be based on conditional behaviour such as being below
+a certain armour threshold, or temporary behaviours. Finally, structural
+outfits have been made be stronger and play a more significant role in
+outfitting and not being left as an afterthought. Many new outfits have been
+added to fill in missing slots and roles, with many left to come.
+
 #### Visual Novel Framework
 
+Another fairly large change is a Lua based visual novel framework that has been
+written from scratch. It allows to show images and special effects while having
+text progressively appear. This greatly enhances some of the storytelling
+ability of the game and allows creating more complex conditional branching
+behaviours.
+
 <%= image( @items['/imgs/blarg/2021/SNN2/vn1.png'], "A friendly Minerva Station Terminal informing the player about their tokens.", 'center', 'width="720px"' ) %>
+
+Furthermore, the entire system is based on the [LÖVE
+framework](https://love2d.org/) which we recently started to partially support
+by mimicking the API in Naev, and allows for nearly infinite customizations.
 
 <%= image( @items['/imgs/blarg/2021/SNN2/vn2.png'], "The Visual Novel Framework has infinite flexibility.", 'center', 'width="720px"' ) %>
 
