@@ -37,7 +37,57 @@ preprocess do
       first = i*config[:page_size] + 1
       last  = (i+1)*config[:page_size]
 
+      pagination = ""
+      if article_groups.length > 1
+         pagination += <<-EOF
+   <nav aria-label="Naev Development Blarg">
+   <ul class="pagination justify-content-center">
+         EOF
+         if i > 0
+            pagination += <<-EOF
+      <li class="page-item">
+         <a class="page-link" href="<%= relative_path_to(@items['/page/#{i}.md']) %>" aria-label="Previous">
+         <span aria-hidden="true">&laquo;</span>
+         <span class="sr-only">Previous</span>
+         </a>
+      </li>
+            EOF
+         end
+         (0..2).reverse_each do |j|
+            if i > j
+               pagination += <<-EOF
+         <li class="page-item"><a class="page-link" href="<%= relative_path_to(@items['/page/#{i-j}.md']) %>">#{i-j}</a></li>
+               EOF
+            end
+         end
+         pagination += <<-EOF
+      <li class="page-item active"><a class="page-link" href="#">#{i+1}</a></li>
+         EOF
+         (0..2).each do |j|
+            if article_groups.length > i+j+1
+               pagination += <<-EOF
+         <li class="page-item"><a class="page-link" href="<%= relative_path_to(@items['/page/#{i+2+j}.md']) %>">#{i+2+j}</a></li>
+               EOF
+            end
+         end
+         if article_groups.length > i+1
+            pagination += <<-EOF
+      <li class="page-item">
+         <a class="page-link" href="<%= relative_path_to(@items['/page/#{i+2}.md']) %>" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+         </a>
+      </li>
+            EOF
+         end
+         pagination += <<-EOF
+   </ul>
+   </nav>
+         EOF
+      end
+
       content  = <<-EOF
+#{pagination}
    <hr>
    <ul class='list-unstyled'>
       EOF
@@ -53,56 +103,11 @@ preprocess do
    </li>
          EOF
       end
-      content += "</ul>"
-      
-      if article_groups.length > 1
-         content += <<-EOF
-   <nav aria-label="Naev Development Blarg">
-   <ul class="pagination justify-content-center">
-         EOF
-         if i > 0
-            content += <<-EOF
-      <li class="page-item">
-         <a class="page-link" href="<%= relative_path_to(@items['/page/#{i}.md']) %>" aria-label="Previous">
-         <span aria-hidden="true">&laquo;</span>
-         <span class="sr-only">Previous</span>
-         </a>
-      </li>
-            EOF
-         end
-         (0..2).reverse_each do |j|
-            if i > j
-               content += <<-EOF
-         <li class="page-item"><a class="page-link" href="<%= relative_path_to(@items['/page/#{i-j}.md']) %>">#{i-j}</a></li>
-               EOF
-            end
-         end
-         content += <<-EOF
-      <li class="page-item active"><a class="page-link" href="#">#{i+1}</a></li>
-         EOF
-         (0..2).each do |j|
-            if article_groups.length > i+j+1
-               content += <<-EOF
-         <li class="page-item"><a class="page-link" href="<%= relative_path_to(@items['/page/#{i+2+j}.md']) %>">#{i+2+j}</a></li>
-               EOF
-            end
-         end
-         if article_groups.length > i+1
-            content += <<-EOF
-      <li class="page-item">
-         <a class="page-link" href="<%= relative_path_to(@items['/page/#{i+2}.md']) %>" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-         </a>
-      </li>
-            EOF
-         end
-         content += <<-EOF
-   </ul>
-   </nav>
-         EOF
-      end
-      
+      content += <<-EOF
+      </ul>
+#{pagination}
+      EOF
+
       @items.create(
          content,
          {  :extension => 'md',
@@ -139,13 +144,13 @@ compile '/favicon.png', rep: :ico do
 end
 
 compile '/**/*.md' do
-  if item['hidden'].nil? 
+  if item['hidden'].nil?
     filter :erb
 
     # Markdown
     filter :kramdown
 
-    # Standard procesing 
+    # Standard procesing
     layout '/default.html'
     filter :relativize_paths, :type => :css
     filter :relativize_paths, :type => :html
