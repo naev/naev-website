@@ -11,7 +11,7 @@ Ruby Gem Dependencies are in `Gemfile` and can be installed using [bundler](http
 bundle install
 ```
 
-You will also need to install `optipng`, `imagemagick`, and `nodejs` (If you get an error about needing a javascript engine).
+You will also need to install `tidy`, `optipng`, `graphicsmagick`, and `nodejs` (If you get an error about needing a javascript engine).
 
 
 ## Compilation
