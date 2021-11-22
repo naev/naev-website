@@ -13,7 +13,7 @@ gem 'pygments.rb'
 gem 'builder'
 gem 'nanoc-javascript-concatenator'
 gem 'uglifier'
-gem 'therubyracer'
+gem 'mini_racer'
 gem 'activesupport'
 gem 'typogruby'
 
