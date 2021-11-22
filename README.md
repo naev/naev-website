@@ -11,7 +11,7 @@ Ruby Gem Dependencies are in `Gemfile` and can be installed using [bundler](http
 bundle install
 ```
 
-You will also need to install `tidy`, `optipng`, `graphicsmagick`, and `nodejs` (If you get an error about needing a javascript engine).
+You will also need to install `tidy`, `optipng`, and `graphicsmagick`.
 
 
 ## Compilation
@@ -45,3 +45,5 @@ The writing is down using [markdown](https://daringfireball.net/projects/markdow
 ### Using images
 
 If you wish to use images you have to separately put them in `content/imgs/blarg/` and you can reference them in the post with the inline ruby code `<%= @items['/imgs/blarg/FILENAME'].path %>` where `FILENAME` is replaced by the name of the file. This expression will be converted to the file path when compiling.
+
+For Blarg posts please try and follow the convention in [`content/content/imgs/blarg`](https://github.com/naev/naev-website/tree/main/content/imgs/blarg) to keep things organized. (`content/content/imgs/blarg/YYYY/MM`)
