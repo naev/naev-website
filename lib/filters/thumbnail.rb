@@ -5,6 +5,7 @@ class Thumbnailize < Nanoc::Filter
 
   def run(filename, params={})
     system(
+      'gm',
       'convert',
       '-sharpen', '1',
       '-thumbnail', params[:width].to_s+'x'+params[:height].to_s,
