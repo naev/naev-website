@@ -19,6 +19,7 @@ title: Media
   <img class='img-fluid' alt='Screenshot' src='<%= s.path %>' />
  </a>
 <% end %>
+</div>
 
 <hr/>
 
