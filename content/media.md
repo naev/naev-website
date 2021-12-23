@@ -25,6 +25,7 @@ title: Media
 
 ### Older Screenshots
 
+<div class="foto-gallery">
 <% @items.find_all('/imgs/screenshots/*').each do |s| %>
  <a class='use-fluidbox' href='<%= s.path %>'>
   <img class='img-fluid' alt='Screenshot' src='<%= s.path %>' />
