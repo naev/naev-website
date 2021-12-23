@@ -31,6 +31,6 @@ title: Media
 ### Videos
 
 <%= video( @items['/videos/0.7.0_trailer.webm'], "Naev 0.7.0 Trailer", "video720p" ) %>
-<%= video( @items['/videos/0.5.0_skirmish.webm'], "Naev Naev 0.5.0 Skirmish", "video720p" ) %>
+<%= video( @items['/videos/0.5.0_skirmish.webm'], "Naev Naev 0.5.0 Skirmish", "video720p", "4by3" ) %>
 
 <hr/>
