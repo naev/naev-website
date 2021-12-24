@@ -6,7 +6,7 @@ jobs:
   "Check_Website":
     runs-on: ubuntu-latest
     container:
-      image: "ghcr.io/projectsynchro/naev-docs:latest"
+      image: "ghcr.io/naev/naev-docs:latest"
 
     steps:
     - name: Checkout Naev Website Repository
