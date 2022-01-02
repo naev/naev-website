@@ -13,11 +13,11 @@ Naev can be acquired from the following sources:
 A list of all downloads can be found at [Github](https://github.com/naev/naev/releases). See bottom for platform-specific instructions.
 
 <div class="my-4 list-group" id="download-list">
- <button type="button" class="list-group-item list-group-item-action active" disabled>Current (0.9.0)</button>
- <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v0.9.0/naev-0.9.0-win64.exe'>Windows 64-bit</a>
- <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v0.9.0/naev-0.9.0-macos.zip'>macOS 64-bit</a>
- <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v0.9.0/naev-0.9.0-linux-x86-64.AppImage'>Linux 64-bit AppImage</a>
- <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v0.9.0/naev-0.9.0-source.tar.gz'>Source Code</a>
+ <button type="button" class="list-group-item list-group-item-action active" disabled>Current (0.9.1)</button>
+ <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v0.9.1/naev-0.9.1-win64.exe'>Windows 64-bit</a>
+ <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v0.9.1/naev-0.9.1-macos.zip'>macOS 64-bit</a>
+ <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v0.9.1/naev-0.9.1-linux-x86-64.AppImage'>Linux 64-bit AppImage</a>
+ <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v0.9.1/naev-0.9.1-source.tar.gz'>Source Code</a>
 </div>
 
 <div class="my-4 card">
