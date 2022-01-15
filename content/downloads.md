@@ -14,7 +14,7 @@ A list of all downloads can be found at [Github](https://github.com/naev/naev/re
 
 <%
    // Set the version here
-   version = "0.9.1";
+   version = "0.9.1"
 %>
 
 <div class="my-4 list-group" id="download-list">
