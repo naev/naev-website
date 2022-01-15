@@ -13,7 +13,7 @@ Naev can be acquired from the following sources:
 A list of all downloads can be found at [Github](https://github.com/naev/naev/releases). See bottom for platform-specific instructions.
 
 <%
-   // Set the version here
+   # Set the version here
    version = "0.9.1"
 %>
 
