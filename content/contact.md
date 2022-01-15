@@ -26,9 +26,9 @@ Live chat not your thing?
 
 Feel free to post on our Github Discussions page or on the Steam Discussions board:
 
-[![Discuss - Github Discussions](https://img.shields.io/badge/Discuss-Github_Discussions-informational?style=for-the-badge&logo=github)](https://github.com/naev/naev/discussions)
+[![Github - Discussions](https://img.shields.io/badge/Github-Discussions-informational?style=for-the-badge&logo=github)](https://github.com/naev/naev/discussions)
 
-[![Discuss - Steam Discussions](https://img.shields.io/badge/Discuss-Steam_Discussions-black?style=for-the-badge&logo=steam)](https://steamcommunity.com/app/598530/discussions/)
+[![Steam - Discussions](https://img.shields.io/badge/Steam-Discussions-black?style=for-the-badge&logo=steam)](https://steamcommunity.com/app/598530/discussions/)
 
 <br>
 
@@ -37,4 +37,4 @@ Looking for where to report bugs?
 
 We have an issue tracker on Github for all manners of bug counting and squashing.
 
-[![Report - Issue Tracker](https://img.shields.io/badge/Report-Issue_Tracker-blue?style=for-the-badge&logo=github)](https://github.com/naev/naev/issues)
+[![Issue Tracker - Report](https://img.shields.io/badge/Issue_Tracker-Report-blue?style=for-the-badge&logo=github)](https://github.com/naev/naev/issues)
