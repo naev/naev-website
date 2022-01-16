@@ -2,20 +2,21 @@
 title: Downloads
 ---
 
-Naev can be acquired from the following sources:
-
-* [Naev on github](https://github.com/naev/naev/releases/)
-* [Naev on steam](https://store.steampowered.com/app/598530/Naev/)
-* [Naev on itch.io](https://naev.itch.io/naev)
-* [Naev on flathub](https://flathub.org/apps/details/org.naev.Naev)
-* Most linux package managers [![Packaging status](https://repology.org/badge/tiny-repos/naev.svg)](https://repology.org/project/naev/versions)
-
-A list of all downloads can be found at [Github](https://github.com/naev/naev/releases). See bottom for platform-specific instructions.
-
 <%
    # Set the version here
    version = "0.9.1"
 %>
+
+Naev can be acquired from the following sources:
+
+[![Get - Github](https://img.shields.io/static/v1?label=Get&message=Github&color=2ea44f&style=for-the-badge&logo=github)](https://github.com/naev/naev/releases/v<%=version%>)
+[![Get - Steam](https://img.shields.io/static/v1?label=Get&message=Steam&color=black&style=for-the-badge&logo=steam)](https://store.steampowered.com/app/598530/Naev)
+[![Get - Itch.io](https://img.shields.io/static/v1?label=Get&message=Itch.io&color=%23FA5C5C&style=for-the-badge&logo=itch.io&logoColor=https%3A%2F%2Fnaev.itch.io%2Fnaev)](https://naev.itch.io/naev)
+[![Get - Flathub](https://img.shields.io/static/v1?label=Get&message=Flathub&color=%234A86CF&style=for-the-badge&logo=flathub&logoColor=white)](https://flathub.org/apps/details/org.naev.Naev)
+
+You can also get ahold of Naev from most linux package managers: [![latest packaged version(s)](https://repology.org/badge/latest-versions/naev.svg)](https://repology.org/project/naev/versions)
+
+A list of all downloads can be found at [Github](https://github.com/naev/naev/releases). See bottom for platform-specific instructions.
 
 <div class="my-4 list-group" id="download-list">
  <button type="button" class="list-group-item list-group-item-action active" disabled>Current (<%=version%>)</button>
