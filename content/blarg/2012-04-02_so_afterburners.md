@@ -1,5 +1,5 @@
 ---
-title: So, afterburners
+title: 'So, afterburners'
 author: BTAxis
 tags: [ 'development' ]
 ---

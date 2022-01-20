@@ -1,5 +1,5 @@
 ---
-title: XDG Part Deux
+title: 'XDG Part Deux'
 author: Deiz
 tags: [ 'development' ]
 ---

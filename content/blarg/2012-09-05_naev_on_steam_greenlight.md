@@ -1,5 +1,5 @@
 ---
-title: Naev on Steam Greenlight
+title: 'Naev on Steam Greenlight'
 author: BTAxis
 tags: [ 'announcement' ]
 ---

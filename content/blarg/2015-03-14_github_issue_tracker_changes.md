@@ -1,5 +1,5 @@
 ---
-title: GitHub & Issue Tracker Changes
+title: 'GitHub & Issue Tracker Changes'
 author: Deiz
 tags: [ 'announcement' ]
 ---

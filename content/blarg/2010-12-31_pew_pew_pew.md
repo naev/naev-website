@@ -1,5 +1,5 @@
 ---
-title: 0.5.0 Status Update
+title: '0.5.0 Status Update'
 author: bobbens
 tags: [ 'development' ]
 ---

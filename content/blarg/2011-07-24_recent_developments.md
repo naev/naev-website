@@ -1,5 +1,5 @@
 ---
-title: Recent developments
+title: 'Recent developments'
 author: BTAxis
 tags: [ 'announcement' ]
 ---

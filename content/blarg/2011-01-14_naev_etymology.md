@@ -1,5 +1,5 @@
 ---
-title: Naev Etymology
+title: 'Naev Etymology'
 author: bobbens
 tags: [ 'announcement' ]
 ---

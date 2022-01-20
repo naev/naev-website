@@ -1,5 +1,5 @@
 ---
-title: Hello World!
+title: 'Hello World!'
 author: bobbens
 tags: [ 'announcement' ]
 ---

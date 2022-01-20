@@ -1,5 +1,5 @@
 ---
-title: Steam Branches and Soundtrack
+title: 'Steam Branches and Soundtrack'
 author: bobbens
 tags: [ 'announcement' ]
 ---

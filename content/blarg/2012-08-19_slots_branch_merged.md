@@ -1,5 +1,5 @@
 ---
-title: Slots branch merged
+title: 'Slots branch merged'
 author: BTAxis
 tags: [ 'development' ]
 ---

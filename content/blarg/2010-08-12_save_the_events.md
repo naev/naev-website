@@ -1,5 +1,5 @@
 ---
-title: Save the Events!
+title: 'Save the Events!'
 author: bobbens
 tags: [ 'development' ]
 ---

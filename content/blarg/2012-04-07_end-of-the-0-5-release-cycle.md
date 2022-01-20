@@ -1,5 +1,5 @@
 ---
-title: End of the 0.5 Release Cycle
+title: 'End of the 0.5 Release Cycle'
 author: bobbens
 tags: [ 'development' ]
 ---

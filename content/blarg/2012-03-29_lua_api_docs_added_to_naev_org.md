@@ -1,5 +1,5 @@
 ---
-title: Lua API Docs Added to Naev.org
+title: 'Lua API Docs Added to Naev.org'
 author: Deiz
 tags: [ 'announcement' ]
 ---

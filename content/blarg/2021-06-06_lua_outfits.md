@@ -1,5 +1,5 @@
 ---
-title: Utility Outfits
+title: 'Utility Outfits'
 author: bobbens
 tags: [ 'development' ]
 ---

@@ -1,5 +1,5 @@
 ---
-title: New tutorial
+title: 'New tutorial'
 author: BTAxis
 tags: [ 'development' ]
 ---

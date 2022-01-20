@@ -1,5 +1,5 @@
 ---
-title: ndata is dead, long live ndata
+title: 'ndata is dead, long live ndata'
 author: BTAxis
 tags: [ 'development' ]
 ---

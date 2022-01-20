@@ -1,5 +1,5 @@
 ---
-title: More happenings
+title: 'More happenings'
 author: BTAxis
 tags: [ 'development' ]
 ---

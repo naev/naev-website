@@ -1,5 +1,5 @@
 ---
-title: Manual Zoom and Dizzyness
+title: 'Manual Zoom and Dizzyness'
 author: bobbens
 tags: [ 'development' ]
 ---

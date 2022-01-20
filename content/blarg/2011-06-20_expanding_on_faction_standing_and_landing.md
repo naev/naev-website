@@ -1,5 +1,5 @@
 ---
-title: Expanding on faction standing and landing
+title: 'Expanding on faction standing and landing'
 author: Deiz
 tags: [ 'development' ]
 ---

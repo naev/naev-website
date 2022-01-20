@@ -1,5 +1,5 @@
 ---
-title: Future Goes Boom
+title: 'Future Goes Boom'
 author: bobbens
 tags: [ 'development' ]
 ---

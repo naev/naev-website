@@ -1,5 +1,5 @@
 ---
-title: NAEV forum added.
+title: 'NAEV forum added.'
 author: Deiz
 tags: [ 'announcement' ]
 ---
