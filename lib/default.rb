@@ -74,4 +74,65 @@ def image( item, caption, alignment='center', extra_html='' )
 EOS
 end
 
+# Embeds a badge
+# Populate this case with additional badges as the need arises.
+# Badges should be stored in imgs/badges/<badge_name>.svg
 
+def badge( type, version='latest' )
+
+  if version == 'latest'
+    version=version
+  else
+    version="v#{version}"
+  end
+
+  case type
+    when 'steam';
+      link = "https://store.steampowered.com/app/598530/Naev"
+      badge_image = @items['/imgs/badges/steam.svg'].path
+      alt = "Get - Steam"
+    when 'flathub';
+      link = "https://flathub.org/apps/details/org.naev.Naev"
+      badge_image = @items['/imgs/badges/flathub.svg'].path
+      alt = "Get - Flathub"
+    when 'itchio';
+      link = "https://naev.itch.io/naev"
+      badge_image = @items['/imgs/badges/itchio.svg'].path
+      alt = "Get - Itch.io"
+    when 'repology';
+      link = "https://repology.org/project/naev/versions"
+      badge_image = "https://repology.org/badge/latest-versions/naev.svg"
+      alt = "latest packaged version(s)"
+    when 'github';
+      link = "https://github.com/naev/naev/releases/#{version}"
+      badge_image = @items['/imgs/badges/github.svg'].path
+      alt = "Get - Github"
+    when 'matrix';
+      link = "https://matrix.to/#/#naev-community:matrix.org"
+      badge_image = @items['/imgs/badges/matrix.svg'].path
+      alt = "Join - Matrix"
+    when 'discord';
+      link = "https://discord.com/invite/nd2M5BR"
+      badge_image = @items['/imgs/badges/discord.svg'].path
+      alt = "Join - Discord"
+    when 'steamdisc';
+      link = "https://steamcommunity.com/app/598530/discussions"
+      badge_image = @items['/imgs/badges/steamdisc.svg'].path
+      alt = "Discussions - Steam"
+    when 'githubdisc';
+      link = "https://github.com/naev/naev/discussions"
+      badge_image = @items['/imgs/badges/githubdisc.svg'].path
+      alt = "Discussions - Github"
+    when 'issues';
+      link = "https://github.com/naev/naev/issues"
+      badge_image = @items['/imgs/badges/issues.svg'].path
+      alt = "Issue Tracker - Github"
+    else
+      link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      badge_image = @items['/imgs/badges/error.svg'].path
+      alt = "Error - Bad"
+  end
+  return <<-EOS
+[![#{alt}](#{badge_image})](#{link})
+EOS
+end
