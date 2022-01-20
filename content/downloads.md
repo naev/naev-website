@@ -4,7 +4,7 @@ title: Downloads
 
 <%
    # Set the version here
-   version = "0.9.1"
+   version = "0.9.2"
 %>
 
 Naev can be acquired from the following sources:
@@ -21,7 +21,7 @@ A list of all downloads can be found at [Github](https://github.com/naev/naev/re
 <div class="my-4 list-group" id="download-list">
  <button type="button" class="list-group-item list-group-item-action active" disabled>Current (<%=version%>)</button>
  <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v<%=version%>/naev-<%=version%>-win64.exe'>Windows 64-bit</a>
- <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v<%=version%>/naev-<%=version%>-macos.zip'>macOS 64-bit</a>
+ <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v<%=version%>/naev-<%=version%>-macos.dmg'>macOS 64-bit</a>
  <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v<%=version%>/naev-<%=version%>-linux-x86-64.AppImage'>Linux 64-bit AppImage</a>
  <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v<%=version%>/naev-<%=version%>-source.tar.gz'>Source Code</a>
 </div>
@@ -49,7 +49,7 @@ Download and run the Naev installer.
 You can use this installer to extract Naev to a portable install location if needed.
    </div>
    <div class="tab-pane fade" id="macos-desc" role="tabpanel" aria-labelledby="macos-tab" markdown=1>
-Download the release zip, and click it to extract Naev.app. This can be run directly and includes all data required to play.
+Download the release dmg, and click it to open. You can drag Naev to your applications folder.
 
 If you are running MacOS Catalina or newer you may have to bypass Gatekeeper: See the [Naev FAQ](https://github.com/naev/naev/wiki/FAQ#i-see-a-warning-message-and-cant-run-naev-on-macos) for details.
    </div>
