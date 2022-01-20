@@ -10,7 +10,7 @@ As I’m aware, much of our community isn’t on IRC, so I’ve decided to start
 
 #### State of 0.5.0
 
-As the [changelog](https://web.archive.org/web/20180622180854/http://code.google.com/p/naev/wiki/Changelog) indicates, we’ve been working on two of the major features of 0.5.0. Namely, the all-famous big systems and electronic warfare. Currently development is being done off of master to keep that “playable” while we develop separately. There are two branches you can check out:
+As the [changelog](https://web.archive.org/web/20111105054741/http://code.google.com/p/naev/wiki/Changelog) indicates, we’ve been working on two of the major features of 0.5.0. Namely, the all-famous big systems and electronic warfare. Currently development is being done off of master to keep that “playable” while we develop separately. There are two branches you can check out:
 
 [bigsys](https://groups.google.com/d/topic/naev/fLRwFQf8D_g) (Has big systems – Last updated in May.)
 
