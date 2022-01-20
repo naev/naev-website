@@ -20,7 +20,7 @@ A list of all downloads can be found at [Github](https://github.com/naev/naev/re
  <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v<%=version%>/naev-<%=version%>-win64.exe'>Windows 64-bit</a>
  <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v<%=version%>/naev-<%=version%>-macos.dmg'>macOS 64-bit</a>
  <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v<%=version%>/naev-<%=version%>-linux-x86-64.AppImage'>Linux 64-bit AppImage</a>
- <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v<%=version%>/naev-<%=version%>-source.tar.gz'>Source Code</a>
+ <a class='list-group-item list-group-item-action' href='https://github.com/naev/naev/releases/download/v<%=version%>/naev-<%=version%>-source.tar.xz'>Source Code</a>
 </div>
 
 <div class="my-4 card">
