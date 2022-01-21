@@ -1,5 +1,5 @@
 ---
-title: Mouse Targeting
+title: 'Mouse Targeting'
 author: bobbens
 tags: [ 'development' ]
 ---

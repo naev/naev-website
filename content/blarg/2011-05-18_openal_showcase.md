@@ -1,5 +1,5 @@
 ---
-title: OpenAL showcase
+title: 'OpenAL showcase'
 author: bobbens
 tags: [ 'development' ]
 ---

@@ -1,5 +1,5 @@
 ---
-title: UNIX gets XDG Compliancy
+title: 'UNIX gets XDG Compliancy'
 author: bobbens
 tags: [ 'development' ]
 ---

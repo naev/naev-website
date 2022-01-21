@@ -1,5 +1,5 @@
 ---
-title: It’s shiny and new.
+title: 'It’s shiny and new.'
 author: Deiz
 tags: [ 'announcement' ]
 ---

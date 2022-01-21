@@ -1,5 +1,5 @@
 ---
-title: Next steps to 0.5.0
+title: 'Next steps to 0.5.0'
 author: bobbens
 tags: [ 'development' ]
 ---

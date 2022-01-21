@@ -1,5 +1,5 @@
 ---
-title: Naev History
+title: 'Naev History'
 author: Synchro
 tags: [ 'announcement' ]
 ---

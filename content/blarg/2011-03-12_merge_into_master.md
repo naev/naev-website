@@ -1,5 +1,5 @@
 ---
-title: Merge into Master
+title: 'Merge into Master'
 author: bobbens
 tags: [ 'development' ]
 ---

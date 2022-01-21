@@ -1,5 +1,5 @@
 ---
-title: Naev is on Desura!
+title: 'Naev is on Desura!'
 author: Deiz
 tags: [ 'announcement' ]
 ---

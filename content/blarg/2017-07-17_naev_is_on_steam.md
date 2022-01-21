@@ -1,5 +1,5 @@
 ---
-title: Naev is on steam!
+title: 'Naev is on steam!'
 author: bobbens
 tags: [ 'announcement' ]
 ---

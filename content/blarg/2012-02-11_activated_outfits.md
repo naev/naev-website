@@ -1,5 +1,5 @@
 ---
-title: Activated outfits
+title: 'Activated outfits'
 author: BTAxis
 tags: [ 'development' ]
 ---

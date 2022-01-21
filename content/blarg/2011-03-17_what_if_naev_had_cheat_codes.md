@@ -1,5 +1,5 @@
 ---
-title: What if Naev had cheat codes?
+title: 'What if Naev had cheat codes?'
 author: BTAxis
 tags: [ 'development' ]
 ---

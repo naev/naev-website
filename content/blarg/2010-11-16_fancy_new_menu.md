@@ -1,5 +1,5 @@
 ---
-title: Fancy new menu
+title: 'Fancy new menu'
 author: bobbens
 tags: [ 'development' ]
 ---

@@ -1,5 +1,5 @@
 ---
-title: Sporadic Naev Newsletter Vol. 2
+title: 'Sporadic Naev Newsletter Vol. 2'
 author: bobbens
 tags: [ 'development' ]
 ---
