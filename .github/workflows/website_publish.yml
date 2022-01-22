@@ -1,20 +1,20 @@
-on:  
+on:
+  workflow_dispatch:
   workflow_run:
     workflows: ["Website Check"]
     branches: [main]
     types: 
       - completed
-
 name: Website Publish
-
 jobs:
-  on-success:
+  website_publish:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository == 'naev/naev-website' }}
     steps:
-      - name: Trigger Publish
-        run: |
-          curl -X POST https://api.github.com/repos/naev/naev.github.io/dispatches \
-          -H 'Accept: application/vnd.github.everest-preview+json' \
-          -u ${{ secrets.WEBSITE_ACCESS_TOKEN }} \
-          --data '{"event_type": "website", "client_payload": { "repository": "'"$GITHUB_REPOSITORY"'" }}'
+    - uses: convictional/trigger-workflow-and-wait@v1.5.0
+      with:
+        owner: naev
+        repo: naev.github.io
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        workflow_file_name: website_publish.yml
+        inputs: '{ "publish_type": "website" }'
