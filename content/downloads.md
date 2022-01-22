@@ -44,7 +44,7 @@ A list of all downloads can be found at [Github](https://github.com/naev/naev/re
   </ul>
   <div class="m-2 tab-content">
    <div class="tab-pane fade show active" id="windows-desc" role="tabpanel" aria-labelledby="windows-tab" markdown=1>
-Download and run the Naev installer. 
+Download and run the Naev installer.
 
 You can use this installer to extract Naev to a portable install location if needed.
    </div>
