@@ -16,7 +16,7 @@ gem 'uglifier'
 gem 'mini_racer'
 gem 'activesupport'
 gem 'typogruby'
-
+gem 'terser'
 gem 'adsf'
 
 gem 'w3c_validators'
