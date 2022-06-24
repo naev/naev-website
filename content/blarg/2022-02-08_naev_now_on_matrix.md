@@ -16,7 +16,7 @@ If something bad happens to Discord we will have some record of the discussions 
 To cater to individuals who dislike Discord and to increase our presence online we decided to create a Matrix community and bridge it to our Discord. This means that any messages sent on either platform will be synchronized between the two. This includes edits, mentions, and more.
 
 ### What is this Matrix thingy?
-To learn more about Matrix, check out their handy [Introduction guide](https://matrix.org/docs/guides/introduction).
+To learn more about Matrix, check out their handy [Introduction guide](https://matrix.org/docs/guides/introduction/).
 
 ### How do I join?
 To join our Matrix Space, you can click on this badge: <%= badge( "matrix" ) %>
