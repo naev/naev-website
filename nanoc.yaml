@@ -34,3 +34,5 @@ checking:
 checks:
   external_links:
     exclude_files: ['downloads']
+  internal_links:
+    exclude: ['^/api', '^/devmanual']
