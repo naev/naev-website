@@ -52,6 +52,12 @@ def video( item, caption, class_code='', aspectratio='16by9' )
 EOS
 end
 
+def pdf( item, width="100%", height="600px" )
+  return <<-EOS
+<embed src="#{item}" type="application/pdf" width="#{width}" height="#{height}">
+EOS
+end
+
 def youtube( video_id, caption, class_code='', aspectratio='16by9' )
   return <<-EOS
 <figure class="figure embed-responsive #{class_code}">
