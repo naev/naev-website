@@ -52,9 +52,11 @@ def video( item, caption, class_code='', aspectratio='16by9' )
 EOS
 end
 
-def pdf( item, width="100%", height="600px" )
+def pdf( item, width="100%", height="900" )
   return <<-EOS
-<embed src="#{item}" type="application/pdf" width="#{width}" height="#{height}">
+<object width="#{width}" height="#{height}" type="application/pdf" data="#{item}?#zoom=85&scrollbar=0&toolbar=0&navpanes=0">
+<a href="#{item}">Could not load PDF, Click here to download.</a>
+</object>
 EOS
 end
 
