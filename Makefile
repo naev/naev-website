@@ -14,6 +14,3 @@ install: all
 
 check: all
 	bundle exec nanoc check
-
-
-

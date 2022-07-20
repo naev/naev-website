@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 # A few helpful tips about the Rules file:
 #
 # * The string given to #compile and #route are matching patterns for
@@ -118,7 +116,7 @@ preprocess do
 end
 
 # some special files
-compile '/sitemap.xml' do
+compile '/sitemap.rb' do
    filter :erb
    write '/sitemap.xml'
 end

@@ -12,7 +12,7 @@ Effects to notice:
   * Doppler Effect (depends on velocity)
   * Air absorption factor (sounds like you’re under water)
   * Reverb (also helps make it sound like you’re underwater)
-  * Speed of sound changes (depends on nebula density – also for sounding underwater) 
+  * Speed of sound changes (depends on nebula density – also for sounding underwater)
 
 For the implementation I’m using the [SW OpenAL implementation by KittyCat](https://openal-soft.org/). Which should work on all systems that support Naev, so I highly recommend it. With the SDL_Mixer backend you do not get all these fancy effects. Some of these effects are also active when not in the nebula and especially notable is the pitch shift with time compression. So I highly recommend you all use the OpenAL backend.
 

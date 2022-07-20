@@ -91,13 +91,13 @@ footer {
 
       // Transition makes sure that when expanding or collapsing, the margins smoothly transition.
       transition: margin 0.3s ease-out, padding 0.3s ease-out, border-top 0.3s ease-out;
-      
+
       // Add margin to nav links so they aren't on the very edge of screen.
       .nav-link {
          margin-left:1rem;
       }
    }
-  
+
    // When the navbar is collapsed, don't add margin or the horizontal line.
    .navbar-collapse.collapse:not(.show) > .navbar-nav {
       margin-top: 0;

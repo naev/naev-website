@@ -11,7 +11,7 @@ require 'nanoc/filters/javascript_concatenator'
 require 'image_size'
 
 def image_with_size(item, alt='', class_code='', html_code='')
-   begin 
+   begin
       if item.class == Nanoc::CompilationItemView and not item.attributes[:content_filename].nil?
          img = ImageSize.new(IO.read(item.attributes[:content_filename]))
          "<img src='#{item.path}' height='#{img.height}' width='#{img.width}' alt=\"#{alt}\" class='img-fluid #{class_code}' #{html_code}/>"

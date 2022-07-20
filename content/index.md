@@ -6,7 +6,7 @@ title: Home
 
 Naev is a game about space exploration, trade and combat. Players travel the galaxy and earn money by trading, fighting and performing missions.
 
-#### Want to keep up with development? 
+#### Want to keep up with development?
 
 Check out the <%= link_to( 'Blarg', "/page/1/" ) %> to see new posts about the development of Naev! You can also add this page to your favourite RSS reader to get notifications every time we post something on the <%= link_to( 'Blarg', "/page/1/" ) %>.
 
@@ -29,7 +29,7 @@ Currently Naev is a playable game, but it is far from being a complete one. To f
 
 #### Where can I get Naev?:
 
-You can find downloads at the <%= link_to( 'downloads', @items['/downloads.md'].path ) %> page and also on popular services such as [steam](https://store.steampowered.com/app/598530/Naev/) or [itch.io](https://naev.itch.io/naev). 
+You can find downloads at the <%= link_to( 'downloads', @items['/downloads.md'].path ) %> page and also on popular services such as [steam](https://store.steampowered.com/app/598530/Naev/) or [itch.io](https://naev.itch.io/naev).
 If you’re a Linux user, you can also get Naev from a few other sources, see the <%= link_to( 'downloads page', @items['/downloads.md'].path ) %> for more information.
 
 #### How can I get in touch?:

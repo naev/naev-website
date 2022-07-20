@@ -138,5 +138,3 @@ tracker](https://github.com/naev/naev/issues), and discussion can be had on
 
 This concludes the Sporadic Naev Newsletter Vol. 2, and hopefully the next will
 be sooner than 10 years from now.
-
-

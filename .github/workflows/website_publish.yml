@@ -3,7 +3,7 @@ on:
   workflow_run:
     workflows: ["Website Check"]
     branches: [main]
-    types: 
+    types:
       - completed
 name: Website Publish
 jobs:

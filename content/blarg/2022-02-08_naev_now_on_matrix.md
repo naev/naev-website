@@ -8,7 +8,7 @@ Over the past few weeks we have been experimenting with bridging our Discord com
 ### Why would we do this?
 The answer to that is two-fold:
 
-Matrix, by design is decentralised, which means anyone can host their own server and have control over their data. For some people this may be the reason they refuse to use Discord entirely. 
+Matrix, by design is decentralised, which means anyone can host their own server and have control over their data. For some people this may be the reason they refuse to use Discord entirely.
 
 If something bad happens to Discord we will have some record of the discussions that have been had since these two networks have been bridged, and have an alternative place to discuss Naev.
 
