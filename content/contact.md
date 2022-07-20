@@ -11,7 +11,7 @@ Gameplay suggestions, new content, bug reports, you name it someone is probably 
 <br>
 
 ### Chatrooms:
-Feel free to join the service you prefer! 
+Feel free to join the service you prefer!
 
 Both Matrix and Discord are bridged together so everyone can join the party:
 
@@ -22,7 +22,7 @@ Both Matrix and Discord are bridged together so everyone can join the party:
 <br>
 
 ### Additional Forums:
-Live chat not your thing? 
+Live chat not your thing?
 
 Feel free to post on our Github Discussions page or on the Steam Discussions board:
 

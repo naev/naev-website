@@ -95,7 +95,7 @@
 					elementData[key] = v;
 				}
 			});
-			
+
 			// Merge defaults into options, into dataset
 			this.settings = $.extend( {}, defaults, options, elementData);
 
@@ -220,7 +220,7 @@
 		// Public functions
 		$.extend(Plugin.prototype, {
 			init: function () {
-			
+
 				// Define elements
 				var fb				= this,
 					$fb				= $(this.element),
@@ -293,7 +293,7 @@
 
 			},
 			open: function() {
-				
+
 				// Open Fluidbox
 				var fb			= this,
 					$fb			= $(this.element),
@@ -402,7 +402,7 @@
 						$fb.trigger('delayedloadfail.fluidbox');
 					};
 					img.src = $fb.attr('href');
-					
+
 				} else {
 					img = new Image();
 					img.onload = function() {
@@ -456,7 +456,7 @@
 					};
 					img.src = $fb.attr('href');
 				}
-					
+
 			},
 			compute: function() {
 				var fb			= this,
@@ -579,7 +579,7 @@
 				if(closeData.error) $fbGhost.trigger('transitionend');
 
 				// Fadeout overlay
-				$fbOverlay.css({ opacity: 0 });		
+				$fbOverlay.css({ opacity: 0 });
 			},
 			bindEvents: function() {
 				var fb = this,
@@ -598,7 +598,7 @@
 
 					// If state exists, we close it
 					} else {
-						
+
 						// Close Fluidbox
 						fb.close();
 					}

@@ -57,7 +57,7 @@ Now, you might feel that this mass limit thing is an arbitrary limitation, and i
 The following is a list of changes made that don’t directly relate to the slots system. I probably forgot a few things, though.
 
   * Fuel consumption has been changed so small ships use 100 fuel per jump, medium ships use 200, and large ships use 400. This is done to counteract the fact that larger ships have more slots, and can therefore equip more fuel tanks. This gave large ships a much greater operational range than small ones. The flipside of this is that buying fuel off NPC ships is going to be more tedious, but we have some ideas about easing that.
-  * The Auxiliary Processing Unit outfits no longer exist. Sorry! The only way to increase your CPU capacity is by upgrading your core system. 
+  * The Auxiliary Processing Unit outfits no longer exist. Sorry! The only way to increase your CPU capacity is by upgrading your core system.
   * The galaxy now contains secret shortcut jumps. You can’t find these jumps unless you have a special scanner, and even then you probably need some hints to find them. Note that the scanner isn’t sold anywhere yet, and there are also no hints to be had yet. But this is a work-in-progress.
 
 <%= image( @items['/imgs/blarg/2012/08/outfittabs.png'], "A ship with its core slots installed. The orange text in the tool tip indicates the slot specialization.", "center" ) %>
@@ -65,4 +65,3 @@ The following is a list of changes made that don’t directly relate to the slot
   * Some work has gone into the equipment screen. The outfit list is now tabbed, each tab corresponding to a class of outfits. The tab letters, as seen on the right, stand for **W**eapons, **U**tility, **S**tructure, **C**ore and **X**everything. Hopefully, this can be further improved and applied to the outfitter screen as well.
   * For developers: All game data is now found under the dat/ subdirectory. This was done to make the relationship between the game data and the ndata file more apparent.
   * For developers: Lua scripts from the dat/scripts/ subdirectory can now be included into other scripts by only their name. The game will look in this directory for includes.
-  

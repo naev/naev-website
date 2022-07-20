@@ -9,9 +9,9 @@ title: Downloads
 
 Naev can be acquired from the following sources:
 
-<%= badge( "github", version ) %> 
-<%= badge( "steam" ) %> 
-<%= badge( "itchio" ) %> 
+<%= badge( "github", version ) %>
+<%= badge( "steam" ) %>
+<%= badge( "itchio" ) %>
 <%= badge( "flathub" ) %>
 
 You can also get ahold of Naev from most linux package managers: <%= badge( "repology" ) %>

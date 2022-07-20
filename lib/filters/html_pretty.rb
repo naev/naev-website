@@ -9,7 +9,7 @@ class HTMLPrettyFilter < Nanoc::Filter
   def run(content, params={})
     doc = Nokogiri::HTML(content)
     #doc = Nokogiri::XML(content,&:noblanks)
-    
+
     # Find comments.
     doc.xpath("//comment()").each do |comment|
         # Check it's not a conditional comment.

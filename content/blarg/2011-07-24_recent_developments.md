@@ -11,17 +11,17 @@ The first thing I should mention is that is is summer for Naev, and summer usual
 That said, things have been happening since the 0.5.0 release. The original plan for the next version, 0.5.1, was, and I [quote](https://colabti.org/irclogger/irclogger_log/naev?date=2011-06-16#l296):
 
    14:16 bobbens we can do safe lanes
-   
+
    14:16 bobbens for starters
-   
+
    14:16 bobbens although I’m not sure on the safe lane stuff how to procede
-   
+
    14:16 bobbens we can either go safe lane “simple implementation” first
-   
+
    14:16 bobbens for quick release
-   
+
    14:16 bobbens or go quadtrees and asteroids first
-   
+
    14:16 bobbens for a slower crazy release
 
 Once this discussion was over, we promptly started working on completely different things. One of those things is the revised faction standing mechanic, described in a <%= link_to( 'previous blarg post', @items['/blarg/2011-06-20_expanding_on_faction_standing_and_landing.md'].path ) %>. But there is more.
@@ -63,4 +63,3 @@ You can see a map of their territory to the right. It is located in the north of
 Our team leader bobbens is working on a personal project as well. You can see the result here.
 
 **NOTE** Unfortunately the above mentioned screenshot is lost, and there is some mention of bobbens' toe. I wish I could tell you what that was all about - Synchro
-

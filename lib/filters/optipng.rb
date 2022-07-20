@@ -8,4 +8,3 @@ class Thumbnailize < Nanoc::Filter
   end
 
 end
-
