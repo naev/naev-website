@@ -2,22 +2,26 @@ on: [push, pull_request]
 
 name: Website Check
 
+permissions: {}
+
 jobs:
   "Check_Website":
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     container:
       image: "ghcr.io/naev/naev-docs:latest"
 
     steps:
     - name: Checkout Naev Website Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Build and Check Website
       run: |
         make check
 
     - name: Upload Crash Log
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       if: failure()
       with:
         name: naev-website-${{ github.sha }}-crashlog
@@ -25,7 +29,7 @@ jobs:
         if-no-files-found: error
 
     - name: Upload Website Artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: naev-website-${{ github.sha }}
         path: ${{ github.workspace }}/output/*

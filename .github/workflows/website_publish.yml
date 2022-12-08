@@ -6,15 +6,18 @@ on:
     types:
       - completed
 name: Website Publish
+permissions: {}
 jobs:
   website_publish:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository == 'naev/naev-website' }}
     steps:
-    - uses: convictional/trigger-workflow-and-wait@v1.5.0
+    - uses: convictional/trigger-workflow-and-wait@v1.6.5
       with:
         owner: naev
         repo: naev.github.io
         github_token: ${{ secrets.WEBSITE_ACCESS_TOKEN }}
         workflow_file_name: website_publish.yml
-        inputs: '{ "publish_type": "website" }'
+        client_payload: '{ "publish_type": "website" }'
