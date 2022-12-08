@@ -10,7 +10,7 @@ permissions: {}
 jobs:
   website_publish:
     permissions:
-      contents: write
+      contents: read
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' && github.repository == 'naev/naev-website' }}
     steps:
