@@ -14,6 +14,18 @@ title: Media
 ### Screenshots
 
 <div class="foto-gallery">
+<% @items.find_all('/imgs/screenshots_0.10.0/*').each do |s| %>
+ <a class='use-fluidbox' href='<%= s.path %>'>
+  <img class='img-fluid' alt='Screenshot' src='<%= s.path %>' />
+ </a>
+<% end %>
+</div>
+
+<hr/>
+
+### 0.9.0 Screenshots
+
+<div class="foto-gallery">
 <% @items.find_all('/imgs/screenshots_0.9.0/*').each do |s| %>
  <a class='use-fluidbox' href='<%= s.path %>'>
   <img class='img-fluid' alt='Screenshot' src='<%= s.path %>' />
@@ -37,6 +49,7 @@ title: Media
 
 ### Older Videos
 
+<%= video( @items['/videos/0.9.0_trailer.webm'], "Naev 0.9.0 Trailer", "video720p" ) %>
 <%= video( @items['/videos/0.7.0_trailer.webm'], "Naev 0.7.0 Trailer", "video720p" ) %>
 <%= video( @items['/videos/0.5.0_skirmish.webm'], "Naev Naev 0.5.0 Skirmish", "video720p", "4by3" ) %>
 
