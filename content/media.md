@@ -14,7 +14,7 @@ title: Media
 ### Screenshots
 
 <div class="foto-gallery">
-<% @items.find_all('/imgs/screenshots_0.10.0/*').each do |s| %>
+<% @items.find_all('/imgs/screenshots_0.10.0/*.webp').each do |s| %>
  <a class='use-fluidbox' href='<%= s.path %>'>
   <img class='img-fluid' alt='Screenshot' src='<%= s.path %>' />
  </a>
@@ -26,7 +26,7 @@ title: Media
 ### 0.9.0 Screenshots
 
 <div class="foto-gallery">
-<% @items.find_all('/imgs/screenshots_0.9.0/*').each do |s| %>
+<% @items.find_all('/imgs/screenshots_0.9.0/*.webp').each do |s| %>
  <a class='use-fluidbox' href='<%= s.path %>'>
   <img class='img-fluid' alt='Screenshot' src='<%= s.path %>' />
  </a>
