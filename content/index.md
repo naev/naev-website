@@ -10,7 +10,22 @@ Naev is a game about space exploration, trade and combat. Players travel the gal
 
 #### Want to keep up with development?
 
-Check out the <%= link_to( 'Blarg', "/page/1/" ) %> to see new posts about the development of Naev! You can also add this page to your favourite RSS reader to get notifications every time we post something on the <%= link_to( 'Blarg', "/page/1/" ) %>.
+Check out the <%= link_to( 'Blarg', "/page/1/" ) %> to see new posts about the development of Naev! You can also add this page to your favourite RSS reader to get notifications every time we post something on the <%= link_to( 'Blarg', "/page/1/" ) %>. Recent posts are shown below:
+
+<ul class="list-unstyled mx-3">
+<% sorted_articles.slice!(0..2).each do |a| %>
+<%= "
+ <li class='media my-3'>
+  <div class='media-body'>
+   <a href='#{a.path}'>
+   <h5 class='mt-0 mb-1'>#{a[:title]} <span class='text-muted'>#{a[:created_at_s]}</span></h5>
+   </a>
+   #{if a[:blurb].nil? then "" else a[:blurb] end}
+  </div>
+ </li>
+" %>
+<% end %>
+</ul>
 
 #### Main features:
 

@@ -2,6 +2,7 @@
 title: 'Autonav the Lanes'
 author: bobbens
 tags: [ 'development' ]
+blurb: Autonav now works on patrol lanes!
 ---
 
 *This post is about development on Naev 0.11.0.*
