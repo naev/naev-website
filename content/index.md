@@ -1,8 +1,10 @@
 ---
 title: Home
+hidetitle: true
 ---
 
-<%= image( @items['/imgs/naev.png'], "", "center" ) %>
+<!--<%= image( @items['/imgs/naev.png'], "", "center" ) %>-->
+<%= video( @items['/videos/0.10.0_trailer.webm'], "Naev 0.10.0 Trailer", "video720p" ) %>
 
 Naev is a game about space exploration, trade and combat. Players travel the galaxy and earn money by trading, fighting and performing missions.
 

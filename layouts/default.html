@@ -63,7 +63,9 @@
    </nav>
 
    <main role='main' class='container'>
+    <% if not @item[:hidetitle] %>
     <h2><%= @item[:title] %></h2>
+    <% end %>
     <% if not @item[:created_at].nil? %>
     <p class="text-muted">
     <%= ("by %s," % @item[:author]).upcase %>
