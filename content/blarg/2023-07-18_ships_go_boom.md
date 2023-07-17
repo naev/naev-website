@@ -2,6 +2,7 @@
 title: 'Ships Go Boom'
 author: bobbens
 tags: [ 'development' ]
+blurb: Ships now have different types of explosions that can vary drastically.
 ---
 
 *This post is about development on Naev 0.11.0.*
