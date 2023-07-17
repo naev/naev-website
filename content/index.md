@@ -13,10 +13,10 @@ Check out the <%= link_to( 'Blarg', "/page/1/" ) %> to see new posts about the d
 #### Main features:
 
  * A large galaxy with hundreds of planets and moons to explore.
- * Real-time, semi-Newtonian gameplay reminiscent of the Escape Velocity games.
+ * Real-time, semi-Newtonian gameplay reminiscent of the [Escape Velocity games](https://en.wikipedia.org/wiki/Escape_Velocity_(video_game)).
  * Many different ships to buy and pilot, and many ways to customize each of them.
  * Multiple factions, each with unique ship designs and personalities.
- * Open-source, meaning ultimate freedom of modding.
+ * Open-source, meaning ultimate freedom of modding, although plugins are also supported.
 
 Currently Naev is a playable game, but it is far from being a complete one. To further mature the game, we, the developers, need you. Yes, you. All it takes is the motivation to be creative in some way! Probably the easiest way to help, as well as one of the most valuable ones, is by coming up with new stories for the game, and by shaping those stories into playable missions. Other ways to help include making art or sounds, improving gameplay via balancing work, or (if you have the ability) even a bit of coding on the main program.
 
@@ -25,7 +25,7 @@ Currently Naev is a playable game, but it is far from being a complete one. To f
  * This game is a hobby project, not an indie development project. There is no final plan, no time frame for the "finished game".
  * The dev team does not accept monetary donations, only direct contributions to the game itself.
  * The game engine is written in C. Missions are written in Lua.
- * No, there is no multiplayer, and there probably won't be. Unless you add it!
+ * There is an [experimental multiplayer plugin](https://github.com/ThrosturX/naev-multiplayer), although it is quite limited.
 
 #### Where can I get Naev?:
 
