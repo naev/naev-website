@@ -6,10 +6,9 @@ tags: [ 'development' ]
 
 *This post is about development on Naev 0.11.0.*
 
-At the 2nd anniversary of posting about implementing [raymarched fancy
-explosions](<%= @items['/blarg/2021-07-18_future_goes_boom.md'].path %>), it's
-time to talk about trying to use the system to its full potential. And by full
-potential, I mean custom ship explosions!
+At the 2nd anniversary of posting about implementing [raymarched fancy explosions](<%= @items['/blarg/2021-07-18_future_goes_boom.md'].path %>),
+it's time to talk about trying to use the system to its full potential. And by
+full potential, I mean custom ship explosions!
 
 All of the factional ships have been given custom explosions, some slightly
 different from the "standard" explosions, while others have much more radical
@@ -21,8 +20,7 @@ This should help have the different factions and ships feel more different.
 <%= video( @items['/videos/blarg/2023_07_explosions.webm'], "Showcase of the different faction ship explosions.", "video720p" ) %>
 
 From the technical side of things, custom ship explosions are done by using Lua
-scripting for ships, similar as what was [done for outfits](<%=
-@items['/blarg/2021-06-06_lua_outfits.md %>). This opens up a whole new
+scripting for ships, similar as what was [done for outfits](<%= @items['/blarg/2021-06-06_lua_outfits.md'] %>). This opens up a whole new
 possibility of what can be done with ships, I won't cover other things being
 done with this yet, but it has to do with the Great House Sirius rework which
 brings about psychic powers. All these changes will be included in version
