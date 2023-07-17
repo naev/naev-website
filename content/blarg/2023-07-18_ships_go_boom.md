@@ -20,7 +20,7 @@ This should help have the different factions and ships feel more different.
 <%= video( @items['/videos/blarg/2023_07_explosions.webm'], "Showcase of the different faction ship explosions.", "video720p" ) %>
 
 From the technical side of things, custom ship explosions are done by using Lua
-scripting for ships, similar as what was [done for outfits](<%= @items['/blarg/2021-06-06_lua_outfits.md'].poth %>). This opens up a whole new
+scripting for ships, similar as what was [done for outfits](<%= @items['/blarg/2021-06-06_lua_outfits.md'].path %>). This opens up a whole new
 possibility of what can be done with ships, I won't cover other things being
 done with this yet, but it has to do with the Great House Sirius rework which
 brings about psychic powers. All these changes will be included in version
