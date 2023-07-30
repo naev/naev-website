@@ -5,17 +5,32 @@ tags: [ 'development' ]
 ---
 
 Rather than waiting 10 years again from the previous edition of our [sporadic
-naev
-newsletter](<%=@items['/blarg/2021-08-22_sporadic_naev_newsletter_vol_2.md'].path%>),
+naev newsletter](<%=@items['/blarg/2021-08-22_sporadic_naev_newsletter_vol_2.md'].path%>),
 we've only let 2 years pass this time. In this edition, we'll talk about some
 improvements in 0.10.0 that may have gone under the radar, and the upcoming
 0.11.0 release.
 
 #### State of 0.11.0
 
-With a ton of commits and content since 0.10.0, things are starting to shape up
-for 0.11.0. This release has focused greatly on reworking and improving
-existing systems by bringing up to modern standards.
+With [a ton of commits and content since
+0.10.0](https://github.com/naev/naev/compare/0.10.x...main), things are
+starting to shape up for 0.11.0. This release has focused greatly on reworking
+and improving existing systems by bringing up to modern standards. In
+particular, things such as how weapons are implemented, how ship stats are
+dealt with, autonav internals, npc/news/derelict internals, reworking old
+missions into the visual novel system, etc. have been mainly rewritten to
+improve shortcomings. While this is not really visible in the end product
+directly, it has enabled a lots of new features and improved the overall
+robustness of the game.
+
+TODO some image
+
+However, this release is much more than just elimination of technical debt, as
+this release features a lot of new content in pretty much every area of the
+game: more events, more missions, more lore, more outfits, and more locations.
+The icing on the cake are new mechanics such as point defense systems, flow
+mechanics, and trials. Overall this is shaping up to be quite a large release
+and we are excited to share it with you.
 
 #### Universe Revisited
 
@@ -28,7 +43,7 @@ systems and system objects, so that many places you knew will probably seem
 familiar but quite different at the same time. It may take a while to get used
 to.
 
-TODO image
+<%= image( @items['/imgs/blarg/2023/nebula_ruined_station.png'], "Stumbling upon a ruined space station in the Nebula.", 'center' ) %>
 
 In numbers, some 67 new systems and 123 new space objects have been added,
 mainly around the Sol Nebula to give a more in-depth sensation of destruction
@@ -45,14 +60,14 @@ individuals don't possess very strong powers by themselves, House Sirius
 has designed their ships to be powerful amplifiers to be able to unleash potent
 abilities on the battle field.
 
-TODO image of some ability
+<%= image( @items['/imgs/blarg/2023/sirius_astral_projection.png'], "The player unleashing an astral projection made of psychic energy to fight for them against pirates.", 'center' ) %>
 
 The player will also be able to obtain similar psychic powers and unlock the
-full potential through new trials that can be found throughout space. Each
-trial will require the player to overcome obstacles in order to unlock new
+full potential through new tests that can be found throughout space. Each
+test will require the player to overcome obstacles in order to unlock new
 abilities and also increase their overall psychic powers.
 
-TODO image of trial
+<%= image( @items['/imgs/blarg/2023/sirius_test.png'], "Complete tests to unlock new psychic powers.", 'center' ) %>
 
 While Sirius ships have flow capability built-in, other ships can also use
 structural outfits to enable flow capability, allowing for more customization.
@@ -78,7 +93,7 @@ like how to write content for Naev and how to structure plugins. Given the
 advanced programming possibilities with the [Naev Lua
 API](https://naev.org/api/), the only limit is your imagination!
 
-TODO image of plugins menu
+<%= image( @items['/imgs/blarg/2023/plugins_menu.png'], "The simple shader plugin can be useful for older hardware.", 'center' ) %>
 
 Oh, there is [explicit support for total
 conversions](https://github.com/naev/total_conversion_plugin_example) too!
@@ -96,10 +111,11 @@ Space Trader Society
 One issue Naev has traditionally had with the large systems it features, is
 slow downs when many pilots were fighting each other as a result of a primitive
 collision system. Well, it is no longer an issue as the current system has been
-reworked with quadtrees. Testing shows that it is much much faster in extreme
-cases, with the game easily handling hundreds of ships fighting each other
-without slowing down. Furthermore, many aspects of the game have been profiled
-and optimized such that the game should run much more fluid than 0.10.0.
+reworked with [quadtrees](https://en.wikipedia.org/wiki/Quadtree). Testing
+shows that it is much much faster in extreme cases, with the game easily
+handling hundreds of ships fighting each other without slowing down.
+Furthermore, many aspects of the game have been profiled and optimized such
+that the game should run much more fluid than 0.10.0.
 
 TODO image pushing FPS limits
 
