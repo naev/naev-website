@@ -1,9 +1,8 @@
 ---
-title: 'Autonav the Lanes'
+title: 'New Autonav'
 author: bobbens
 tags: [ 'development' ]
 blurb: Autonav now works on patrol lanes and is also customizable.
-hidden: true
 ---
 
 *This post is about development on Naev 0.11.0.*
@@ -23,6 +22,8 @@ So how does this work? By default, autonav will use patrol lanes of non-hostile
 factions when jumping, and will not use them otherwise. You can configure it to
 not use lanes for jump, and also to use lanes for landing on planets or
 stations from the new settings option accessible in the info menu.
+
+<%= image( @items['/imgs/blarg/2023/autonav_settings.png'], "New player settings are accessible from the info window.", 'center' ) %>
 
 To get this working the entire autonav system was scrapped and rewritten, this
 also has the added effect of being much more accurate and efficient when
