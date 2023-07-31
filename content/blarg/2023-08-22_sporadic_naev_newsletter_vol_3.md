@@ -117,7 +117,13 @@ handling hundreds of ships fighting each other without slowing down.
 Furthermore, many aspects of the game have been profiled and optimized such
 that the game should run much more fluid than 0.10.0.
 
-TODO image pushing FPS limits
+<%= image( @items['/imgs/blarg/2023/skirmish_benchmark.png'], "Naev running smoothly at 60 FPS despite 50 Dvaered Vendettas fighting with 50 FLF Lancelots.", 'center' ) %>
+
+Tests show that where Naev 0.10.0 would choke and become a slide show, Naev
+0.11.0 will be able to run without a hitch, such as 50 Dvaered Vendettas
+fighting with 50 FLF Lancelots. That said, given the high levels of time
+compressions capital ships can reach, it is likely in some extreme cases you
+may experience some slow downs.
 
 #### Concluding Remarks
 
