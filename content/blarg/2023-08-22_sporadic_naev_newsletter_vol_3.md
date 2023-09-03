@@ -23,8 +23,6 @@ improve shortcomings. While this is not really visible in the end product
 directly, it has enabled a lots of new features and improved the overall
 robustness of the game.
 
-TODO some image
-
 However, this release is much more than just elimination of technical debt, as
 this release features a lot of new content in pretty much every area of the
 game: more events, more missions, more lore, more outfits, and more locations.
@@ -100,11 +98,35 @@ conversions](https://github.com/naev/total_conversion_plugin_example) too!
 
 #### New Content
 
-PD
-Minerva
-New NPC
-New accessories
-Space Trader Society
+There's also a bunch of new content being worked on. Not only have the NPCs and
+news you can find at the spaceport bar been greatly reworked to me more
+relevant to the context at hand, but many new missions, factions, and
+mechanisms have been implemented. The new universe has also given opportunities
+to diversify the different factions and make them feel more unique, from taunts
+to landing messages.
+
+First of all, with optimizations done to the engine, it's finally possible to
+have efficient point defense systems, something that has been asked for by
+players for a long time. Point defense systems will automatically target nearby
+missiles, torpedoes, and even interceptors! Of course the exact specs will
+depend on the outfit, Guardian Systems use powerful lasers to focus on
+torpedoes or interceptors, while Soromid Spittle Clusters have been
+bio-engineered to create screens of bubbles to block weaker, but faster
+missiles.
+
+<%= image( @items['/imgs/blarg/2023/spittle.png'], "A Soromid Ira trying to stop incoming torpedoes with spittle.", 'center' ) %>
+
+A new neutral faction has been created to replace the old Trader's Guild. The
+new Space Traders Society is an organization that spans different guilds and
+has important subfactions such as the mercenary guild Astra Vigilis, the Mining
+Vrata, and the Imperial Red Star. They have important presence in several
+systems where new outfits are also available for trade.
+
+<%= image( @items['/imgs/blarg/2023/mining_vrata.png'], "The Mining Vrata Guildhouse.", 'center' ) %>
+
+Finally, more events missions have been added throughout the universe, and although
+not finished yet, we expect the conclusion to the Minerva campaign to make it
+into 0.11.0.
 
 #### Game Optimization
 
