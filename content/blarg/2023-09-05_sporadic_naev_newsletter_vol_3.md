@@ -2,6 +2,7 @@
 title: 'Sporadic Naev Newsletter Vol. 3'
 author: bobbens
 tags: [ 'development' ]
+blurb: Universe revisited, House Sirius rework, plugin system, and more!
 ---
 
 Rather than waiting 10 years again from the previous edition of our [sporadic
