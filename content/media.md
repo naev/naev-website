@@ -6,7 +6,7 @@ title: Media
 
 ### Trailer
 
-<%= video( @items['/videos/0.10.0_trailer.webm'], "Naev 0.10.0 Trailer", "video720p" ) %>
+<%= video( @items['/videos/0.11.0_trailer.webm'], "Naev 0.11.0 Trailer", "video720p" ) %>
 
 
 <hr/>

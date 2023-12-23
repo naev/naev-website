@@ -4,7 +4,7 @@ title: Downloads
 
 <%
    # Set the version here
-   version = "0.10.6"
+   version = "0.11.0"
 %>
 
 Naev can be acquired from the following sources:
