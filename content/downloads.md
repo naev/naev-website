@@ -4,10 +4,10 @@ title: Downloads
 
 <%
    # Set the version here
-   version = "0.11.0"
+   version = "0.11.1"
 %>
 
-Naev can be acquired from the following sources:
+You can download Naev from the following sources:
 
 <%= badge( "github", version ) %>
 <%= badge( "steam" ) %>
@@ -57,7 +57,7 @@ If you are running MacOS Catalina or newer you may have to bypass Gatekeeper: Se
 64-bit AppImages are available above, these can be marked as executable and bundle all dependencies and data required to play.
 <!--Ubuntu users can install Naev through the [Playdeb package](http://www.playdeb.net/software/NAEV). If you’re unfamiliar, instructions can be found [here](http://www.playdeb.net/updates/Ubuntu/#how_to_install).-->
 
-We have been packaged by Ubuntu, Debian, Gentoo, Arch Linux, openSUSE, Fedora, Manjaro, and OpenBSD as naev.
+Naev has been packaged by Ubuntu, Debian, Gentoo, Arch Linux, openSUSE, Fedora, Manjaro, and OpenBSD as naev.
 
 <!--If you’re using our official binaries, make sure to install the dependencies. -->
    </div>
