@@ -4,7 +4,7 @@ title: Downloads
 
 <%
    # Set the version here
-   version = "0.11.2"
+   version = "0.11.3"
 %>
 
 You can download Naev from the following sources:
@@ -51,7 +51,7 @@ You can use this installer to extract Naev to a portable install location if nee
    <div class="tab-pane fade" id="macos-desc" role="tabpanel" aria-labelledby="macos-tab" markdown=1>
 Download the release dmg, and click it to open. You can drag Naev to your applications folder.
 
-This package supports both Apple Silicon and Intel Macs. 
+This package supports both Apple Silicon and Intel Macs.
 Requires macOS 11.0 for Apple Silicon Macs, and macOS 10.13 for Intel Macs.
 
 If you are running MacOS Catalina or newer you will have to bypass Gatekeeper: See the [Naev FAQ](https://github.com/naev/naev/wiki/FAQ#i-see-a-warning-message-and-cant-run-naev-on-macos) for details.
