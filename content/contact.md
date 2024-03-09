@@ -11,7 +11,7 @@ Gameplay suggestions, new content, bug reports, you name it someone is probably 
 <br>
 
 ### Chatrooms:
-Feel free to join the service you prefer!
+Most development and discussion is currently done in the chatrooms. Feel free to join the service you prefer!
 
 Both Matrix and Discord are bridged together so everyone can join the party:
 
