@@ -6,18 +6,23 @@
         body, html {
             margin: 0;
             padding: 0;
-            width: 100%;
             height: 100%;
-            overflow: hidden;
         }
-
-        nebula-canvas {
-            display: block;
+        .canvas-container {
+            display: flex;
+            height: 100vh;
+        }
+        canvas {
+            width: 50%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <canvas id="nebula-canvas"></canvas>
+    <div class="canvas-container">
+        <canvas id="nebula-canvas-0"></canvas>
+        <canvas id="nebula-canvas-1"></canvas>
+    </div>
     <script type="text/javascript" src="../content/js/_nebula.js"></script>
 </body>
 </html>

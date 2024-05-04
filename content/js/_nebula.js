@@ -1,4 +1,8 @@
-let gl, program, buffer;
+let gls = [];
+let programs = [];
+let buffers = [];
+
+const numCanvases = 2; // Set the number of canvases
 
 const vertexShaderSource = `
     attribute vec2 position;
@@ -164,8 +168,8 @@ function getParentContainerSize(element) {
     return { width, height };
 }
 
-function resizeCanvas() {
-    let canvas = document.getElementById('nebula-canvas');
+function resizeCanvas(canvas, index) {
+    let gl = gls[index];
     let containerSize = getParentContainerSize(canvas);
 
     canvas.width = containerSize.width;
@@ -173,23 +177,23 @@ function resizeCanvas() {
     gl.viewport(0, 0, canvas.width, canvas.height);
 }
 
-function init() {
-    let canvas = document.getElementById('nebula-canvas');
-    gl = canvas.getContext('webgl');
+function initCanvas(index) {
+    let canvas = document.getElementById(`nebula-canvas-${index}`);
+    let gl = canvas.getContext('webgl');
 
     if (!gl) {
-        console.error('WebGL not supported');
+        console.error(`WebGL not supported for canvas ${index}`);
         return;
     }
 
-    program = createProgram(gl, vertexShaderSource, fragmentShaderSource);
+    let program = createProgram(gl, vertexShaderSource, fragmentShaderSource);
     if (!program) {
         return;
     }
 
     gl.useProgram(program);
 
-    buffer = gl.createBuffer();
+    let buffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, -1, 3, 3, -1]), gl.STATIC_DRAW);
 
@@ -199,21 +203,36 @@ function init() {
 
     gl.uniform1f(gl.getUniformLocation(program, 'eddy_scale'), 50.0);
 
-    resizeCanvas(); // Call resizeCanvas initially
-    window.addEventListener('resize', resizeCanvas); // Resize canvas when window is resized
+    gls[index] = gl;
+    programs[index] = program;
+    buffers[index] = buffer;
 
-    function renderCanvas() {
-        gl.uniform1f(gl.getUniformLocation(program, 'u_time'), (performance.now()) / 1000);
-    
-        gl.clearColor(0, 0, 0, 1);
-        gl.clear(gl.COLOR_BUFFER_BIT);
-    
-        gl.drawArrays(gl.TRIANGLES, 0, 3);
-         
-        requestAnimationFrame(renderCanvas);
-    }
-    // Start rendering loop
-    requestAnimationFrame(renderCanvas);
+    resizeCanvas(canvas, index); // Call resizeCanvas initially
+    window.addEventListener('resize', () => resizeCanvas(canvas, index)); // Resize canvas when window is resized
 }
 
-init();
+function renderCanvas(index) {
+    let gl = gls[index];
+    let program = programs[index];
+    let buffer = buffers[index];
+
+    gl.uniform1f(gl.getUniformLocation(program, 'u_time'), (performance.now()) / 1000);
+
+    gl.clearColor(0, 0, 0, 1);
+    gl.clear(gl.COLOR_BUFFER_BIT);
+
+    gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+
+    requestAnimationFrame(() => renderCanvas(index));
+}
+
+// Initialize and render multiple canvases
+for (let i = 0; i < numCanvases; i++) {
+    let canvas = document.createElement('canvas');
+    canvas.id = `nebula-canvas-${i}`;
+    document.body.appendChild(canvas);
+
+    initCanvas(i);
+    renderCanvas(i);
+}
