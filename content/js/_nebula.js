@@ -229,10 +229,6 @@ function renderCanvas(index) {
 
 // Initialize and render multiple canvases
 for (let i = 0; i < numCanvases; i++) {
-    let canvas = document.createElement('canvas');
-    canvas.id = `nebula-canvas-${i}`;
-    document.body.appendChild(canvas);
-
     initCanvas(i);
     renderCanvas(i);
 }
