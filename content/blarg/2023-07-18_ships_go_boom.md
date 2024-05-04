@@ -27,4 +27,3 @@ done with this yet, but it has to do with the Great House Sirius rework which
 brings about psychic powers. All these changes will be included in version
 0.11.0 which should be released around December this year. Lots of exciting
 development to look for for the rest of 2023!
-
