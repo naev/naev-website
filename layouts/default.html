@@ -27,7 +27,8 @@
   </head>
   <body class="bg-light">
    <div id="naev-header" class="container-fluid nebula-bg">
-    <div class='container'>
+    <canvas id="nebula-canvas-0"></canvas>
+    <div class='container' style="position: relative; z-index: 1;">
     <a href="<%= @items['/index.md'].path %>"><img src="<%= @items['/imgs/naev.png'].path %>" alt="Naev" /></a>
     </div>
    </div>
@@ -75,8 +76,9 @@
     <%= yield %>
    </main>
 
-   <div class='container-fluid nebula-bg mt-5'>
-   <div class='container'>
+   <div id="naev-footer" class='container-fluid nebula-bg mt-5'>
+   <canvas id="nebula-canvas-1"></canvas>
+   <div class='container' style="position: relative; z-index: 1;">
    <footer class='row text-muted'>
     <p class='col-xs-12 col-sm-6 text-left'>&copy; <%= ("%s" % (Time.new).year ) %> Naev Development Blarg</p>
     <p class='col-xs-12 col-sm-6 text-right'>Original content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-by-sa 4.0</a></p>
