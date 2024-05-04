@@ -1,6 +1,3 @@
-const ITERATIONS = 3;
-const SCALAR = Math.pow(2.0, 4.0 / 3.0);
-
 let gl, program, buffer;
 
 const vertexShaderSource = `
@@ -133,7 +130,7 @@ const fragmentShaderSource = `
 `;
 
 function compileShader(gl, source, type) {
-    const shader = gl.createShader(type);
+    let shader = gl.createShader(type);
     gl.shaderSource(shader, source);
     gl.compileShader(shader);
     if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
@@ -145,9 +142,9 @@ function compileShader(gl, source, type) {
 }
 
 function createProgram(gl, vertexShaderSource, fragmentShaderSource) {
-    const vertexShader = compileShader(gl, vertexShaderSource, gl.VERTEX_SHADER);
-    const fragmentShader = compileShader(gl, fragmentShaderSource, gl.FRAGMENT_SHADER);
-    const program = gl.createProgram();
+    let vertexShader = compileShader(gl, vertexShaderSource, gl.VERTEX_SHADER);
+    let fragmentShader = compileShader(gl, fragmentShaderSource, gl.FRAGMENT_SHADER);
+    let program = gl.createProgram();
     gl.attachShader(program, vertexShader);
     gl.attachShader(program, fragmentShader);
     gl.linkProgram(program);
@@ -159,15 +156,25 @@ function createProgram(gl, vertexShaderSource, fragmentShaderSource) {
     return program;
 }
 
+function getParentContainerSize(element) {
+    let parent = element.parentElement;
+    let parentStyle = window.getComputedStyle(parent);
+    let width = parseFloat(parentStyle.getPropertyValue('width'));
+    let height = parseFloat(parentStyle.getPropertyValue('height'));
+    return { width, height };
+}
+
 function resizeCanvas() {
-    const canvas = document.getElementById('nebula-canvas');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    let canvas = document.getElementById('nebula-canvas');
+    let containerSize = getParentContainerSize(canvas);
+
+    canvas.width = containerSize.width;
+    canvas.height = containerSize.height;
     gl.viewport(0, 0, canvas.width, canvas.height);
 }
 
 function init() {
-    const canvas = document.getElementById('nebula-canvas');
+    let canvas = document.getElementById('nebula-canvas');
     gl = canvas.getContext('webgl');
 
     if (!gl) {
@@ -186,7 +193,7 @@ function init() {
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, -1, 3, 3, -1]), gl.STATIC_DRAW);
 
-    const positionAttrib = gl.getAttribLocation(program, 'position');
+    let positionAttrib = gl.getAttribLocation(program, 'position');
     gl.enableVertexAttribArray(positionAttrib);
     gl.vertexAttribPointer(positionAttrib, 2, gl.FLOAT, false, 0, 0);
 
@@ -196,18 +203,27 @@ function init() {
     window.addEventListener('resize', resizeCanvas); // Resize canvas when window is resized
 
     let startTime = performance.now();
-    function animate() {
-        const time = (performance.now() - startTime) / 1000;
-        gl.uniform1f(gl.getUniformLocation(program, 'u_time'), time);
-
-        gl.clearColor(0, 0, 0, 1);
-        gl.clear(gl.COLOR_BUFFER_BIT);
-
-        gl.drawArrays(gl.TRIANGLES, 0, 3);
-
-        requestAnimationFrame(animate);
+    let lastRenderTime = 0;
+    const refreshRate = 1000 / 15; // Limit to 15 frames per second to reduce performance impact
+        
+    function renderCanvas(currentTime) {
+        if (currentTime - lastRenderTime >= refreshRate) {
+            const time = (performance.now() - startTime) / 1000;
+            gl.uniform1f(gl.getUniformLocation(program, 'u_time'), time);
+    
+            gl.clearColor(0, 0, 0, 1);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+    
+            gl.drawArrays(gl.TRIANGLES, 0, 3);
+        
+            lastRenderTime = currentTime;
+        }
+        
+        requestAnimationFrame(renderCanvas);
     }
-    animate();
+        
+    // Start rendering loop
+    requestAnimationFrame(renderCanvas);
 }
 
 init();
