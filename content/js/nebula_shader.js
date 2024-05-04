@@ -202,26 +202,16 @@ function init() {
     resizeCanvas(); // Call resizeCanvas initially
     window.addEventListener('resize', resizeCanvas); // Resize canvas when window is resized
 
-    let startTime = performance.now();
-    let lastRenderTime = 0;
-    const refreshRate = 1000 / 15; // Limit to 15 frames per second to reduce performance impact
-        
-    function renderCanvas(currentTime) {
-        if (currentTime - lastRenderTime >= refreshRate) {
-            const time = (performance.now() - startTime) / 1000;
-            gl.uniform1f(gl.getUniformLocation(program, 'u_time'), time);
+    function renderCanvas() {
+        gl.uniform1f(gl.getUniformLocation(program, 'u_time'), (performance.now()) / 1000);
     
-            gl.clearColor(0, 0, 0, 1);
-            gl.clear(gl.COLOR_BUFFER_BIT);
+        gl.clearColor(0, 0, 0, 1);
+        gl.clear(gl.COLOR_BUFFER_BIT);
     
-            gl.drawArrays(gl.TRIANGLES, 0, 3);
-        
-            lastRenderTime = currentTime;
-        }
-        
+        gl.drawArrays(gl.TRIANGLES, 0, 3);
+         
         requestAnimationFrame(renderCanvas);
     }
-        
     // Start rendering loop
     requestAnimationFrame(renderCanvas);
 }
