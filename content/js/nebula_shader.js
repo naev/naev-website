@@ -160,7 +160,7 @@ function createProgram(gl, vertexShaderSource, fragmentShaderSource) {
 }
 
 function resizeCanvas() {
-    const canvas = document.getElementById('canvas');
+    const canvas = document.getElementById('nebula-canvas');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     gl.viewport(0, 0, canvas.width, canvas.height);
