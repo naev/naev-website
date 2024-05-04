@@ -11,10 +11,38 @@ div#naev-header {
    padding: 0;
    margin: 0;
    height: 5rem;
+   position: relative;
+   overflow: hidden; /* Ensures the canvas doesn't overflow its container */
 
    img {
       height: 5rem;
    }
+   #nebula-canvas-0 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Set the width to match the container */
+      height: 100%; /* Set the height to match the container */
+      z-index: 0; /* Render canvas behind content */
+  }
+}
+
+div#naev-footer {
+   position: relative;
+   overflow: hidden; /* Ensures the canvas doesn't overflow its container */
+
+   #nebula-canvas-1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Set the width to match the container */
+      height: 100%; /* Set the height to match the container */
+      z-index: 0; /* Render canvas behind content */
+  }
+  footer {
+   height: 5rem;
+   padding-top: 2rem
+  }
 }
 
 .navbar-brand {
@@ -64,11 +92,6 @@ main {
    }
 }
 
-footer {
-   height: 5rem;
-   padding-top: 2rem
-}
-
 // Only apply to the smallest breakpoint (xs)
 @media (max-width:576px) {
    // Don't justify in small mobile, since it causes weird word spacing.
@@ -107,10 +130,12 @@ footer {
    }
 
    // Fix for mobile footer, so text doesn't end below the nebula image.
-   footer {
+   div#naev-footer {
+     footer {
       padding-top:1em;
       > p {
          margin-bottom:0;
+      }
       }
    }
 }
