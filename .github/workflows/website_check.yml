@@ -33,12 +33,12 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: naev-website-${{ github.sha }}-crashlog
-        path: ${{ github.workspace }}/*.log
+        path: ./*.log
         if-no-files-found: warn
 
     - name: Upload Website Artifacts
       uses: actions/upload-artifact@v3
       with:
         name: naev-website-${{ github.sha }}
-        path: ${{ github.workspace }}/output/*
+        path: ./output/*
         if-no-files-found: error
