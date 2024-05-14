@@ -19,6 +19,7 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
+        self-hosted: false
         bundler-cache: true
 
     - name: Build and Check Website
