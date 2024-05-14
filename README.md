@@ -46,4 +46,8 @@ The writing is down using [markdown](https://daringfireball.net/projects/markdow
 
 If you wish to use images you have to separately put them in `content/imgs/blarg/` and you can reference them in the post with the inline ruby code `<%= @items['/imgs/blarg/FILENAME'].path %>` where `FILENAME` is replaced by the name of the file. This expression will be converted to the file path when compiling.
 
-For Blarg posts please try and follow the convention in [`content/content/imgs/blarg`](https://github.com/naev/naev-website/tree/main/content/imgs/blarg) to keep things organized. (`content/content/imgs/blarg/YYYY/MM`)
+For Blarg posts please try and follow the convention in [`content/content/imgs/blarg`](./content/imgs/blarg) to keep things organized. (`content/content/imgs/blarg/YYYY/MM`)
+
+### Maintenance
+
+If you'd like to bump the version of ruby that the site is built with, change the version in [.ruby-version](./.ruby-version) to a supported version of ruby as mentioned on this [documentation page](https://github.com/ruby/setup-ruby?tab=readme-ov-file#supported-version-syntax).
