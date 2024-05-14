@@ -16,17 +16,21 @@ jobs:
     - name: Checkout Naev Website Repository
       uses: actions/checkout@v3
 
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+
     - name: Build and Check Website
       run: |
         make check
 
     - name: Upload Crash Log
       uses: actions/upload-artifact@v3
-      if: failure()
       with:
         name: naev-website-${{ github.sha }}-crashlog
-        path: ${{ github.workspace }}/crash.log
-        if-no-files-found: error
+        path: ${{ github.workspace }}/*.log
+        if-no-files-found: warn
 
     - name: Upload Website Artifacts
       uses: actions/upload-artifact@v3
