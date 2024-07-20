@@ -17,13 +17,9 @@ One of the major complaints that Naev always gets is how ruthless pirates are, e
 
 In order to implement this feature, the in-game universe editor was significantly reworked (yet again!) to support universe diffs, that is, instead of saving the entire universe, only changes with the default are saved. While this has been used only for reducing pirates, for now, this is going to come very in hand when implementing the next stages of the major campaigns, where the universe will undergo many significant changes. It will definitely be a good investment for things to come.
 
-#### Energy Regeneration is Linear
-
-Although many players had not noticed, energy regeneration in Naev used an RC (Resistance-Capacitor) charge curve, which meant that energy would regenerate faster the less you had, and slowly taper out. This was not properly conveyed to the player and has now made linear. Now 100 GW of energy regeneration will always be 100 GJ of energy generated per second. While it is not possible to keep exactly the same behaviour as before, outfits and ships have been adjusted to try to be as similar as before the change.
-
 #### Naev, now in 3D!
 
-So, this is something that has been in the works for almost 5 years now. During that time, it has been rewritten twice: first using object files and more traditional rendering, and now using gltf files with physically-based rendering. As we're not using any sort of game engine, it was all written from the ground up, and includes some fancy things like variance shadow maps, FidelityFX filtering, high dynamic tone mapping, and super sampling. There's still many things to do, but this finally lets us start to do fancier things that were infeasible using spritesheets. That said, spritesheets are still supported, however, 3D models are the recommended way of adding new ships.
+So, while this is something that was proposed around 15 years ago, this is something that has been quite active in the works for almost 5 years now. During that time, it has been rewritten twice: first using object files and more traditional rendering, and now using gltf files with physically-based rendering. As we're not using any sort of game engine, it was all written from the ground up, and includes some fancy things like variance shadow maps, FidelityFX filtering, high dynamic tone mapping, and super sampling. There's still many things to do, but this finally lets us start to do fancier things that were infeasible using spritesheets. That said, spritesheets are still supported, however, 3D models are the recommended way of adding new ships.
 
 <%= image( @items['/imgs/blarg/2024/3dlighting.png'], "The system you are in will subtly change the lighting on all ships.", 'center' ) %>
 
@@ -35,7 +31,11 @@ With 3D, we finally can also have ships tilt slightly when turning. This makes f
 
 <%= video( @items['/videos/blarg/2024/3dgoddard.webm'], "Ships tilt slightly when turning. Weapon mounts and trails adjust to the 3D models.", "video720p" ) %>
 
-For now, only ships have been reworked into 3D, but we hope to have planets, stations, and asteroids to join them in the near future. Some effects such as the backgrounds, wormholes, and the likes will still be kept in 2D, however, it will all work much better together.
+For now, only ships have been reworked into 3D, but we hope to have planets, stations, and asteroids to join them in the near future. Some effects such as the backgrounds, wormholes, and the likes will still be kept in 2D, however, it will all work much better together. Oh, and last but not least, we've taken this opportunity to add 4 new ships to flesh out a bit more the Naev universe!
+
+#### Linear Energy Regeneration
+
+Although many players had not noticed, energy regeneration in Naev used an RC (Resistance-Capacitor) charge curve, which meant that energy would regenerate faster the less you had, and slowly taper out. This was not properly conveyed to the player and has now made linear. Now 100 GW of energy regeneration will always be 100 GJ of energy generated per second. While it is not possible to keep exactly the same behaviour as before, outfits and ships have been adjusted to try to be as similar as before the change.
 
 #### Quality of Life for all!
 
