@@ -5,7 +5,7 @@ tags: [ 'development' ]
 blurb: Naev, now in 3D!
 ---
 
-This year we're having another edition of our Sporadic Naev Newsletter. We'll be covering some of the improvements that will appear in the 0.12.0 release, and more importantly, discuss a feature almost 15 years in the making: Naev going 3D! Now, this doesn't mean gameplay is going 3D - gameplay is fundamentally unchanged - however, the ship models are now in 3D, allowing us to do new fancy effects and lower memory consumption while at it!
+This year we're having another edition of our Sporadic Naev Newsletter. We'll be covering [some of the improvements](https://github.com/naev/naev/blob/main/CHANGELOG) that will appear in the 0.12.0 release, and more importantly, discuss a feature almost 15 years in the making: Naev going 3D! Now, this doesn't mean gameplay is going 3D - gameplay is fundamentally unchanged - however, the ship models are now in 3D, allowing us to do new fancy effects and lower memory consumption while at it!
 
 <%= video( @items['/videos/blarg/2024/3dspin.webm'], "Nearly all ships are now in 3D!", "video720p" ) %>
 
@@ -47,5 +47,5 @@ Additionally, the game uses lazy loading and threading to load much faster than 
 
 #### Concluding Remarks
 
-All the aforementioned fixes can be already tasted in the nightly branch which can be obtained through the steam beta, [github](https://github.com/naev/naev/releases/tag/nightly), or [itch.io](https://naev.itch.io/naev). They will be included in the next 0.12.0 release which is scheduled for December if you'd rather wait for a more stable release instead of risking the bleeding edge.
+All the aforementioned fixes can be already tasted in the nightly branch which can be obtained through the steam beta, [github](https://github.com/naev/naev/releases/tag/nightly), or [itch.io](https://naev.itch.io/naev). They will be included in the next 0.12.0 release which is scheduled for December if you'd rather wait for a more stable release instead of risking the bleeding edge. If you're interested in seeing the full changelog, including things that have not been discussed here, it's [available on github](https://github.com/naev/naev/blob/main/CHANGELOG).
 With that, this concludes the Sporadic Naev Newsletter Vol. 4, and see you again in the next one!
