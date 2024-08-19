@@ -52,3 +52,7 @@ If you’re a Linux user, you can also get Naev from a few other sources, see th
 #### How can I get in touch?:
 
 You can join the discussion via the links on the <%= link_to( 'contact', @items['/contact.md'].path ) %> page, or from the website header bar above.
+
+#### Related projects
+
+* [Endless Skies](https://endless-sky.github.io/) is another great open source 2D space trading and combat game similar to the classic Escape Velocity series. Although inspired from the same source, it takes a different takeon the gameplay and mechanics to Naev.
