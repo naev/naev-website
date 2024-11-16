@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Checkout Naev Website Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup APT Packages
       uses: awalsh128/cache-apt-pkgs-action@latest
@@ -30,14 +30,14 @@ jobs:
         make check
 
     - name: Upload Crash Log
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: naev-website-${{ github.sha }}-crashlog
         path: ./*.log
         if-no-files-found: warn
 
     - name: Upload Website Artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: naev-website-${{ github.sha }}
         path: ./output/*
