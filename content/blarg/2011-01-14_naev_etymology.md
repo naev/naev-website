@@ -8,7 +8,7 @@ Today we’ll talk about the name of this game: it’s history, pronunciation an
 
 Now onto pronunciation, how is it pronounced? In case someday we hold a Naev meet or the likes we should all know how to pronounce it so we don’t make a mess and fools of ourselves (we probably will anyway). The proper way to pronounce Naev is **/nɑ.ɛv/** if I got right my symbols (would need confirmation). I know most of you pronounce it more like knave, but trust me, that is wrong.
 
-For those who still have doubts on how to pronounce: Naev Pronounciation
+For those who still have doubts on how to pronounce: Naev Pronunciation
 
 **Naev /nɑ.ɛv/** An open source action/RPG space video game.
 
