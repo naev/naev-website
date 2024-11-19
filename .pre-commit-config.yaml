@@ -1,9 +1,9 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
-minimum_pre_commit_version: '2.17.0'
+minimum_pre_commit_version: '3.2.0'
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.0.1
+  rev: v5.0.0
   hooks:
     - id: trailing-whitespace
     - id: end-of-file-fixer
@@ -15,3 +15,19 @@ repos:
     - id: check-shebang-scripts-are-executable
     - id: mixed-line-ending
     - id: pretty-format-json
+- repo: https://github.com/codespell-project/codespell
+  rev: v2.3.0
+  hooks:
+    - id: codespell
+      files: '^dat/'
+      types: [lua]
+      #args: ["--ignore-words", ".codespellignore" ]
+      additional_dependencies:
+        - tomli
+- repo: local
+  hooks:
+    - id: optipng
+      name: PNG Optimizer
+      entry: optipng
+      types: [png]
+      language: system
