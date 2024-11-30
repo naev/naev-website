@@ -62,6 +62,6 @@ The following is a list of changes made that don’t directly relate to the slot
 
 <%= image( @items['/imgs/blarg/2012/08/outfittabs.png'], "A ship with its core slots installed. The orange text in the tool tip indicates the slot specialization.", "center" ) %>
 
-  * Some work has gone into the equipment screen. The outfit list is now tabbed, each tab corresponding to a class of outfits. The tab letters, as seen on the right, stand for **W**eapons, **U**tility, **S**tructure, **C**ore and **X**everything. Hopefully, this can be further improved and applied to the outfitter screen as well.
+  * Some work has gone into the equipment screen. The outfit list is now tabbed, each tab corresponding to a class of outfits. The tab letters, as seen on the right, stand for **W**eapons, **U**tility, **S**tructure, **C**ore and **X**everything. Hopefully, this can be further improved and applied to the outfitter screen as well. <!-- codespell:ignore ore,tructure -->
   * For developers: All game data is now found under the dat/ subdirectory. This was done to make the relationship between the game data and the ndata file more apparent.
   * For developers: Lua scripts from the dat/scripts/ subdirectory can now be included into other scripts by only their name. The game will look in this directory for includes.

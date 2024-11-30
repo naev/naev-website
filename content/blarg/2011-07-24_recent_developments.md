@@ -14,7 +14,7 @@ That said, things have been happening since the 0.5.0 release. The original plan
 
    14:16 bobbens for starters
 
-   14:16 bobbens although I’m not sure on the safe lane stuff how to procede
+   14:16 bobbens although I’m not sure on the safe lane stuff how to procede <!-- codespell:ignore procede -->
 
    14:16 bobbens we can either go safe lane “simple implementation” first
 
