@@ -4,7 +4,7 @@ hidetitle: true
 ---
 
 <!--<%= image( @items['/imgs/naev.png'], "", "center" ) %>-->
-<%= video( @items['/videos/0.11.0_trailer.webm'], "Naev 0.11.0 Trailer", "video720p" ) %>
+<%= video( @items['/videos/0.12.0_trailer.webm'], "Naev 0.12.0 Trailer", "video720p" ) %>
 
 Naev is a game about space exploration, trade and combat. Players travel the galaxy and earn money by trading, fighting and performing missions.
 
@@ -35,7 +35,7 @@ Check out the <%= link_to( 'Blarg', "/page/1/" ) %> to see new posts about the d
  * Multiple factions, each with unique ship designs and personalities.
  * Open-source, meaning ultimate freedom of modding, although plugins are also supported.
 
-Currently Naev is a playable game, but it is far from being a complete one. To further mature the game, we, the developers, need you. Yes, you. All it takes is the motivation to be creative in some way! Probably the easiest way to help, as well as one of the most valuable ones, is by coming up with new stories for the game, and by shaping those stories into playable missions. Other ways to help include making art or sounds, improving gameplay via balancing work, or (if you have the ability) even a bit of coding on the main program.
+Currently, Naev is a playable game, but it is far from being a complete one. To further mature the game, we, the developers, need you. Yes, you. All it takes is the motivation to be creative in some way! Probably the easiest way to help, as well as one of the most valuable ones, is by coming up with new stories for the game, and by shaping those stories into playable missions. Other ways to help include making art or sounds, improving gameplay via balancing work, or (if you have the ability) even a bit of coding on the main program.
 
 #### A few things to keep in mind:
 
