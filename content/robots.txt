@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /page/
+
+Sitemap: <%= @config[:base_url]+@items['/sitemap.rb'].path %>
