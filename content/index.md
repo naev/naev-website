@@ -1,6 +1,7 @@
 ---
 title: Home
 hidetitle: true
+priority: 1.0
 ---
 
 <!--<%= image( @items['/imgs/naev.png'], "", "center" ) %>-->

@@ -1,5 +1,6 @@
 ---
 title: Downloads
+priority: 0.8
 ---
 
 <%

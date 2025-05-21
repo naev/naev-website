@@ -1,5 +1,6 @@
 ---
 title: Contact
+priority: 0.7
 ---
 
 ### Want to get in touch?

@@ -1,5 +1,6 @@
 ---
 title: Media
+priority: 0.9
 ---
 
 <hr/>
