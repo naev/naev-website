@@ -1,5 +1,5 @@
 ---
-title: Home
+title: An open source game about space exploration, trade and combat.
 hidetitle: true
 priority: 1.0
 ---
