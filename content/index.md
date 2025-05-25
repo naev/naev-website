@@ -1,5 +1,5 @@
 ---
-title: An open source game about space exploration, trade and combat.
+title: An open source 2d action/rpg space game that combines elements from the action, rpg and simulation genres.
 hidetitle: true
 priority: 1.0
 ---
