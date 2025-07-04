@@ -5,7 +5,7 @@ tags: [ 'development' ]
 blurb: Naev, now in 3D!
 ---
 
-This year we're having another edition of our Sporadic Naev Newsletter. We'll be covering [some of the improvements](https://github.com/naev/naev/blob/main/CHANGELOG) that will appear in the 0.12.0 release, and more importantly, discuss a feature almost 15 years in the making: Naev going 3D! Now, this doesn't mean gameplay is going 3D - gameplay is fundamentally unchanged - however, the ship models are now in 3D, allowing us to do new fancy effects and lower memory consumption while at it!
+This year we're having another edition of our Sporadic Naev Newsletter. We'll be covering [some of the improvements](https://github.com/naev/naev/blob/main/Changelog.md) that will appear in the 0.12.0 release, and more importantly, discuss a feature almost 15 years in the making: Naev going 3D! Now, this doesn't mean gameplay is going 3D - gameplay is fundamentally unchanged - however, the ship models are now in 3D, allowing us to do new fancy effects and lower memory consumption while at it!
 
 <%= video( @items['/videos/blarg/2024/3dspin.webm'], "Nearly all ships are now in 3D!", "video720p" ) %>
 
