@@ -47,5 +47,5 @@ Additionally, the game uses lazy loading and threading to load much faster than 
 
 #### Concluding Remarks
 
-All the aforementioned fixes can be already tasted in the nightly branch which can be obtained through the steam beta, [github](https://github.com/naev/naev/releases/tag/nightly), or [itch.io](https://naev.itch.io/naev). They will be included in the next 0.12.0 release which is scheduled for December if you'd rather wait for a more stable release instead of risking the bleeding edge. If you're interested in seeing the full changelog, including things that have not been discussed here, it's [available on github](https://github.com/naev/naev/blob/main/CHANGELOG).
+All the aforementioned fixes can be already tasted in the nightly branch which can be obtained through the steam beta, [github](https://github.com/naev/naev/releases/tag/nightly), or [itch.io](https://naev.itch.io/naev). They will be included in the next 0.12.0 release which is scheduled for December if you'd rather wait for a more stable release instead of risking the bleeding edge. If you're interested in seeing the full changelog, including things that have not been discussed here, it's [available on github](https://github.com/naev/naev/blob/main/Changelog.md).
 With that, this concludes the Sporadic Naev Newsletter Vol. 4, and see you again in the next one!
