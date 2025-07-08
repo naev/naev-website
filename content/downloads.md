@@ -5,7 +5,7 @@ priority: 0.8
 
 <%
    # Set the version here
-   version = "0.12.5"
+   version = "0.12.6"
 %>
 
 You can download Naev from the following sources:
