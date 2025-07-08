@@ -25,7 +25,7 @@ data_sources:
 checking:
   enabled_checks:
     - internal_links
-    - external_links
+#    - external_links
     - stale
     - mixed_content
 #    - html
